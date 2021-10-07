@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    /* overflow-anchor: none; */
+
+}
+
+/* navbar css */
+nav{
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; 
+    padding: 5px 0; 
+    z-index: 1000;
+    height: fit-content;
+    padding: 8px 0px;
+    /* display: none; */
+    box-shadow: 0px 2px 6px 3px black;
+}
+
+.mobile__toggle_off{
+    display: none;
+    margin-left: 10px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mobile__toggle_on{
+    position: absolute;
+    top:70px;
+    left: 0px;
+    display: none;
+    background-color: #DCDCDC;
+    flex-direction:column;
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    
+
+}
+.vertical__box{
+    width: inherit;
+    height: 25%;
+    display: flex;
+    align-items: center;
+     
+}
+.vertical__box:hover{
+    transition: transform 0.4s ease-in;
+    transform: scale(1.02);
+    background-color: #9c9c9c;
+    
+}
+.vertical__box > a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;  
+    margin:5px 10px;
+}
+.logo > img{
+    margin-left: 20px;
+    object-fit: contain;
+}
+/* when screen size reduces .list__items will disappear */
+.list__items{
+    width:45vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.list__items > li{
+    list-style: none;
+}
+.list__items>li:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.list__items > li> a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+}
+
+.contact__icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: 1.3rem;
+    min-width: 130px;
+    margin: 0 20px;
+}
+.icons__hover{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.icons__hover:hover{
+   color: white;
+    background-color: #000;
+    border-radius: 50%;
+    outline: solid transparent 1px;
+}
+
+/* navbar css */
+/* content */
+
+/* content */
+/* cards container */
+.cards_container{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+.cards_container > div{
+    background: yellow;
+}
+/* cards container */

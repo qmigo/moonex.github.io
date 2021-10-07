@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about_us.css">
+    <script src="https://use.fontawesome.com/1861f71565.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="mobile__toggle_off"  onclick="myFunction()">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-spinner fa-pulse" id="wheel"></span>
+
+        </div>
+        
+        <div class="logo">
+            <img src="logo.png" alt="" srcset="">
+        </div>
+        
+        <!-- <div class="menu"> -->
+            <ul class="list__items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        <!-- </div> -->
+        <div class="contact__icons">
+            <div class="icons__hover"><span class="fa fa-mobile fa-lg "></span></div>
+            <div class="icons__hover"><span class="fa fa-envelope fa-sm"></span></div>
+            <div class="icons__hover"><span class="fa fa-whatsapp fa-lg"></span></div>
+        </div>
+    </nav>
+    <div class="mobile__toggle_on" id="mobile__on">
+        
+            <div class="vertical__box"><a href="">Home</a></div>
+            <div class="vertical__box"><a href="">About Us</a></div>
+            <div class="vertical__box"><a href="">Products</a></div>
+            <div class="vertical__box"><a href="">Contact</a></div>
+            
+    </div>
+    <!-- navbar -->
+
+<div class="container">
+    <h1>About Us</h1>
+    <div class="content">
+        <p>
+            Moonex Technologies is one of the most promising names in the market of Faridabad. 
+            We are actively engaged in manufacturing, exporting, supplying and importing 
+            superior quality LR grade chemical, RO cleaning chemicals, industrial chemicals, 
+            food grade chemicals, rubber processing oils, rubber, plastic and pharmaceutical 
+            chemicals, textiles chemicals, herbal & specialty chemicals and we are well known 
+            Standard Reagents Chemical Authorized Distributor  etc. The entire range of products 
+            that we make available is largely appreciated for its fine quality. 
+            These products are extensively used in various incorporate offices, multinational 
+            companies, hospitals &, educational and industrial units. All these products are 
+            available in advanced packaging. To purchase our products, dial our numbers now.<br><br>
+            Moonex Technologies is a Faridabad (Haryana, India) based company, which was incorporated 
+            in the year 2019. The company has been able to gain a sizeable clientele in the
+             city of Faridabad by offering the best quality products.
+        </p>
+    </div>
+    <div class="cards_container">
+        <div class="cards">
+            <img src="comp-info-img-14683.png" alt="" height="50px" width="50px">
+            <h2>Our Mission</h2>
+        </div>
+        <div class="cards">
+            <img src="comp-info-img-14686.png" alt="" height="50px" width="50px">
+            <h2>Our Warehouse</h2>
+        </div>
+        <div class="cards">
+            <img src="comp-info-img-14687.png" alt="" height="50px" width="50px">
+            <h2>Why Choose Us?</h2>
+        </div>
+
+    </div>
+</div>
+    
+
+
+
+    <script>
+     
+        var pointer=document.querySelector(".pointer");
+           pointer.addEventListener(onclick,(e)=>{
+               // pointer.href="#id-2";
+               pointer.setAttribute("href","#id-2");
+               e.preventDefault();
+           })
+       
+       function myFunction()
+       {
+          
+           
+           // To open Mobile
+           var x=document.getElementById("mobile__on");
+           var bars=document.getElementById("bars");
+           var wheel=document.getElementById("wheel");
+           if(x.style.display==="none")
+           {
+               x.style.display="flex";
+               wheel.style.display="flex";
+               bars.style.display="none";  
+           }
+           else
+           {
+               x.style.display="none";
+               wheel.style.display="none";
+               bars.style.display="flex";
+           }
+       }
+   </script>       
+</body>
+</html>
