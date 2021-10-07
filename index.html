@@ -53,9 +53,9 @@
     <section class="primary">
         
             <div class="primary__content ">
-                <span class="fs">Welcome</span>
-                <span class="fm">To</span>
-                <span class="fl">Moonex</span>
+                <span class="fs demo"></span>
+                <span class="fm demo"></span>
+                <span class="fl demo"></span>
 
             </div>
             <div class="primary__gallery">
@@ -151,7 +151,7 @@
             </div>
             <div class="client">
                 <!-- <img src="lenskart.png" alt=""> -->
-                <img src="https://static.wixstatic.com/media/b342fc_794811b83b56409ba4595300fca6ffcc~mv2.png/v1/fill/w_133,h_59,al_c,q_85,usm_0.66_1.00_0.01/fricke.webp" alt="fricke.png">
+                <img src="ngk_spark_plug_logo.png" alt="">
 
             </div>
             <div class="client">
@@ -205,10 +205,10 @@
         <div class="footer_two">
             <div class="footer_content">
                 All Rights Reserved. Moonex Technologies (Terms of Use)<br>
-                Developed & Managed By Weblink.In Pvt. Ltd.
+                <!-- Developed & Managed By Weblink.In Pvt. Ltd. -->
             </div>
             <div class="footer_logo">
-                <img src="https://catalog.wlimg.com/main-common/ei.png" alt="">
+                <!-- <img src="https://catalog.wlimg.com/main-common/ei.png" alt=""> -->
                 <img style="cursor:pointer;cursor:hand" src="https://seal.starfieldtech.com/images/3/en/siteseal_sf_3_h_l_m.gif"  alt="SSL site seal - click to verify">
             </div>
         </div>
@@ -218,16 +218,36 @@
 
 <script>
      
-     var pointer=document.querySelector(".pointer");
-        pointer.addEventListener(onclick,(e)=>{
-            // pointer.href="#id-2";
-            pointer.setAttribute("href","#id-2");
-            e.preventDefault();
-        })
+    
+
+        var i = 0;
+        var j=0;
+        var speed = 200;
+        txt="Welcome";
+        function typeWriter() {
+          if (i < txt.length) {
+              document.getElementsByClassName("demo")[j].innerHTML += txt.charAt(i);
+              setTimeout(typeWriter, speed);
+            i++;
+          }
+          
+          else 
+          {
+             i=0;j++;
+             if(j==1) 
+             txt="To";
+             else
+             txt="Moonex";
+
+              typeWriter();
+          }
+        }
+        
+        typeWriter();
     
     function myFunction()
     {
-       
+        
         
         // To open Mobile
         var x=document.getElementById("mobile__on");
