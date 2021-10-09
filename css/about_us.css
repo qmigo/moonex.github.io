@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* navbar css */
+nav{
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; 
+    padding: 5px 0; 
+    z-index: 1000;
+    height: fit-content;
+    padding: 8px 0px;
+    box-shadow: 0px 2px 6px 3px black;
+}
+
+.mobile__toggle_off{
+    display: none;
+    margin-left: 10px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mobile__toggle_on{
+    position: absolute;
+    top:70px;
+    left: 0px;
+    display: none;
+    background-color: #DCDCDC;
+    flex-direction:column;
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    
+
+}
+.vertical__box{
+    width: inherit;
+    height: 25%;
+    display: flex;
+    align-items: center;
+     
+}
+.vertical__box:hover{
+    transition: transform 0.4s ease-in;
+    transform: scale(1.02);
+    background-color: #9c9c9c;
+    
+}
+.vertical__box > a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;  
+    margin:5px 10px;
+}
+.logo > img{
+    margin-left: 20px;
+    object-fit: contain;
+}
+/* when screen size reduces .list__items will disappear */
+.list__items{
+    width:45vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.list__items > li{
+    list-style: none;
+}
+.list__items>li:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.list__items > li> a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+}
+
+.contact__icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: 1.3rem;
+    min-width: 130px;
+    margin: 0 20px;
+}
+.icons__hover{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.icons__hover:hover{
+   color: white;
+    background-color: #000;
+    border-radius: 50%;
+    outline: solid transparent 1px;
+}
+
+/* navbar css */
+
+/* container css */
+.container_{
+    height: auto;
+    width: inherit;
+}
+/* container css */
+
+/* heading css */
+.heading{
+    position: relative;
+    width: inherit;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: teal;
+    background: url(../photos/abt_us_bg.jpg);
+    background-size: 100% 100%;
+}
+.heading_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: blur(10px);
+}
+.heading>h1{
+    color: #fff;
+    font-size: 2.5rem;
+    z-index: 1;
+}
+/*  heading css*/
+
+
+/* content section css*/
+.content_section{
+    background-color: rgb(248, 248, 248);
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+.content_col1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: inherit;
+    
+}
+.content_col1_box{
+    position: relative;
+    height:auto;
+    width:auto;
+    margin: 70px 35px 70px 70px;
+    animation: to_right 2s forwards;
+}
+
+.content_col2{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: inherit;
+}
+
+.content_col2_box{
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 70px 70px 70px 35px;
+    animation: to_left 2s forwards;
+
+}
+.content_section>div>div>p{
+    
+    font-size: 1rem;
+    
+}
+/* content section css*/
+
+/* cards section */
+.cards_section{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    background-color: #f6c046;
+    padding :50px 0px;
+}
+.cards_container{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    
+
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    min-height: fit-content;
+    min-height: 80%;
+    background: #fff;
+    margin: 25px;
+    box-shadow: 0px 0px 8px 5px black;
+}
+.cards>img{
+    margin: 20px;
+}
+.cards>h2{
+    text-align: center;
+}
+.cards>p{
+    margin: 10px 30px 30px 30px;
+    font-size: 1rem;
+}
+/* cards section */
+
+/* visiting card css */
+.visiting_card{
+    height: 20vw;
+    width: inherit;
+    background-color: #fff;
+}
+/* visiting card css */
+
+/* footer */
+.footer{
+    width: inherit;
+    height: fit-content;
+    padding:20px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    color: #fff;
+}
+.footer_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer_one>button{
+    margin-top: 20px;
+    display: flex;
+    width: 10%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+
+
+}
+.footer_one>button:hover{
+    background-color: rgb(179, 180, 177);
+}
+.footer_one>button>h4{
+    display: block;
+    width: 80%;
+    margin: auto;
+    font-size: 1rem;
+}
+.footer_two{
+    display: flex;
+    width: inherit;
+    height: fit-content;
+    justify-content: space-evenly;    
+}
+
+
+.footer_logo>img{
+    margin:0 30px;
+}
+
+/* footer */
+
+
+/* animation */
+@keyframes to_right{
+    0% {left:-1000px;}
+    100% {left: 0px}
+    
+}
+
+@keyframes to_left{
+    0% {left:1000px;}
+    100% {left: 0px;}
+    
+}
+
+/* utility */
+#bars{
+    display: flex;
+    color:white;
+}
+#wheel{
+    display: none;
+    color: white;
+}
+.fs{
+    font-size: 4rem;
+    text-shadow: 5px 3px 4px black;
+
+}
+.fms{
+    font-size: 4rem;
+}
+.fm{
+    font-size: 6rem;
+    text-shadow: 5px 3px 4px black;
+}
+.fl{
+    line-height:120px;
+    font-size: 8.5rem;
+    text-shadow: 5px 3px 4px black;
+}
+.no_display{
+    display: none;
+}
+.underline{
+    display: block;
+    width: 30vw;
+    line-height:-80px;
+    height: 5px;
+    margin-bottom: 30px;
+    background-color: #3a3e39;
+}
+
+@media screen and (max-width: 1025px) {
+  
+.fs{
+    font-size: 3rem;
+    text-shadow: 5px 3px 4px black;
+}
+.fms{
+    font-size: 3rem;
+}
+
+.fm{
+    font-size: 5rem;
+    text-shadow: 5px 3px 4px black;
+}
+
+.fl{
+    line-height:120px;
+    font-size: 7.5rem;
+    text-shadow: 5px 3px 4px black;
+}
+  
+}
