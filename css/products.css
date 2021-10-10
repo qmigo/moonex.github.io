@@ -6,6 +6,9 @@
     box-sizing: border-box;
 
 }
+body{
+overflow-x: hidden;
+}
 /* navbar css */
 nav{
     position: sticky;
