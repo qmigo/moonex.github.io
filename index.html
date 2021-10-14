@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonex Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexmobile.css">
+    <script src="https://use.fontawesome.com/1861f71565.js"></script>
+    <script src="js/data.js"></script>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav>
+        
+        <div class="mobile__toggle_off"  onclick="myFunction()">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="wheel"></span>
+
+        </div>
+        <div class="verticalDrop" id="vDropOn">
+            <div class="vertical__box" id="vd1"onclick="navDrop(this.id)">JIS Test Powder</div>
+            <div class="vertical__box" id="vd2"onclick="navDrop(this.id)">Test Dust</div>
+            <div class="vertical__box" id="vd3"onclick="navDrop(this.id)">SAP Test Powder</div>
+            <div class="vertical__box" id="vd4"onclick="navDrop(this.id)">Fuel Contaminants</div>
+            <div class="vertical__box" id="vd5"onclick="navDrop(this.id)">Lab Grade Chemicals</div>
+            <div class="vertical__box" id="vd6"onclick="navDrop(this.id)">Industrial Chemicals & Lubricant Oils</div>
+            <div class="vertical__box" id="vd7"onclick="navDrop(this.id)">Rubber Processing Oil & Chemicals</div>
+            <div class="vertical__box" id="vd8"onclick="navDrop(this.id)">Food Grade Chemicals</div>
+            <div class="vertical__box" id="vd9"onclick="navDrop(this.id)">Textile Chemicals, Paint & Paper Chemicals</div>
+            <div class="vertical__box" id="vd10"onclick="navDrop(this.id)">RO Antiscalant Chemicals</div>
+            <div class="vertical__box" id="vd11"onclick="navDrop(this.id)">Cleaning Chemicals</div>
+            <div class="vertical__box" id="vd12"onclick="navDrop(this.id)">Post Solder Cleaning Chemical Solvents</div>
+            <div class="vertical__box" id="vd13"onclick="navDrop(this.id)">SMT Spare Parts</div>
+    </div>
+        <div class="mobile__toggle_on" id="mobile__on">
+        
+            <div class="vertical__box"><a href="">Home</a></div>    
+            <div class="vertical__box"><a href="html/about_us.html">About Us</a></div>
+            <div class="vertical__box" id="vertical_product">Products
+            
+            
+            </div>
+
+            <div class="vertical__box"><a href="html/contact.html">Contact</a></div>
+            
+    </div>
+        
+        <div class="logo">
+            <img src="photos/logo.png" alt="" srcset="" onclick="goToHome()">
+        </div>
+        
+        <!-- <div class="menu"> -->
+            <ul class="list__items">
+                <li><a href="">Home</a></li>
+                <li><a href="html/about_us.html">About Us</a></li>
+                <li id="product_dropdown"><a href="html/products.html">Products </a>
+                <div id="dropDown">
+
+                        <!-- https://qmigo.github.io/moonex.github.io/html/products.html -->
+                        <div id="nv1"onclick="navDrop(this.id)">JIS Test Powder</div>
+                        <div id="nv2"onclick="navDrop(this.id)">Test Dust</div>
+                        <div id="nv3"onclick="navDrop(this.id)">SAP Test Powder</div>
+                        <div id="nv4"onclick="navDrop(this.id)">Fuel Contaminants</div>
+                        <div id="nv5"onclick="navDrop(this.id)">Lab Grade Chemicals</div>
+                        <div id="nv6"onclick="navDrop(this.id)">Industrial Chemicals & Lubricant Oils</div>
+                        <div id="nv7"onclick="navDrop(this.id)">Rubber Processing Oil & Chemicals</div>
+                        <div id="nv8"onclick="navDrop(this.id)">Food Grade Chemicals</div>
+                        <div id="nv9"onclick="navDrop(this.id)">Textile Chemicals, Paint & Paper Chemicals</div>
+                        <div id="nv10"onclick="navDrop(this.id)">RO Antiscalant Chemicals</div>
+                        <div id="nv11"onclick="navDrop(this.id)">Cleaning Chemicals</div>
+                        <div id="nv12"onclick="navDrop(this.id)">Post Solder Cleaning Chemical Solvents</div>
+                        <div id="nv13"onclick="navDrop(this.id)">SMT Spare Parts</div>
+                    </div>
+                </li>
+                
+                <li><a href="html/contact.html">Contact</a></li>
+            </ul>
+        <div class="contact__icons">
+            <div class="icons__hover " >
+                
+                <span class="fa fa-mobile fa-lg " ></span>
+            </div>
+            <div class="contact_notification">
+                <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                <p> GST NO. : 06ANDPY6567A1ZT </p>
+                <p> +91-9310687322</p>
+                
+            </div>
+
+            <div class="icons__hover">
+                
+                <span class="fa fa-envelope fa-sm" onclick="gmail()"></span>
+            </div>
+            <div class="contact_notification">
+                <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                <p> GST NO. : 06ANDPY6567A1ZT </p>
+                <p> moonex@gmail.com</p>
+                
+            </div>
+            <div class="icons__hover">
+                
+                <span class="fa fa-whatsapp fa-lg" onclick="whtsapWeb()"></span>
+            </div>
+            <div class="contact_notification">
+                <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                <p> GST NO. : 06ANDPY6567A1ZT </p>
+                <p> +91-9310687322</p>
+                
+            </div>
+            
+        </div>
+         
+    </nav>
+   
+    <!-- navbar -->
+
+
+    <!-- Primary section -->
+    <section class="primary">
+        
+            <div class="primary__content ">
+                <span class="fs demo"></span>
+                <span class="fm demo"></span>
+                <span class="fl demo"></span>
+
+            </div>
+            <div class="primary__gallery">
+                <img src="photos/6EU.gif" alt="">
+            </div>
+        
+        
+    </section>
+    <!-- Primary section -->
+    <!-- slide header -->
+    <section class="slide_show">
+        <div class="slideLeft">
+            <div class="product_card">
+                <div class="image_holder">
+                    <img class="scroll-page" onclick="imageClicked(this.id)" id="Sodium Bicarbonate" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/sodium-bicarbonate-1612415874-5712691.jpeg" alt="">
+                </div>
+
+              <div class="product_heading">
+                    <h1>
+                        Sodium Bicarbonate
+                    </h1>
+              </div>
+            </div>
+            <div class="product_card">
+                <div class="image_holder">
+                    <img onclick="imageClicked(this.id)" id="Alum Chemical" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/alum-chemical-1595571303-5528012.jpeg" alt="">
+                    
+                </div>
+
+            <div class="product_heading">
+                    <h1>
+                        Alum Chemical
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="frame"> 
+            <div class="slides" id="1">
+              <img onclick="bannerClicked(this.id)" id="html/products.html#nv1" src="photos/ss1.jpg" alt="">
+              <div class="img_desc">JIS Test Powder</div>
+            </div>
+            <div class="slides" id="2">
+              <img onclick="bannerClicked(this.id)" id="html/products.html#nv5" src="photos/ss2.jpeg" alt="">
+              <div class="img_desc">LR Grade Chemicals</div>
+            </div>
+            <div class="slides" id="3">
+              <img onclick="bannerClicked(this.id)" id="html/products.html#nv6" src="photos/ss3.jpg" alt="">
+              <div class="img_desc">Industrial Chemicals & Lubricant Oil</div>
+            </div>
+            <div class="slides" id="4">
+              <img onclick="bannerClicked(this.id)" id="html/products.html#nv7" src="photos/ss4.jpg" alt="">
+              <div class="img_desc">Oils & Chemicals Absorbents Products</div>
+            </div>
+            <div class="slides" id="5">
+              <img src="" alt="">
+              <div class="img_desc"></div>
+            </div>
+          </div>
+         <div class="slideRight">
+            <div class="product_card">
+                <div class="image_holder">
+                    <img onclick="imageClicked(this.id)" id="Solid Paraffin Wax" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/solid-paraffin-wax-1595571397-5528017.jpeg" alt="">
+                </div>
+                
+                <div class="product_heading">
+                    <h1>
+                        Solid Paraffin Wax
+                    </h1>
+                </div>
+                
+            </div>
+
+            <div class="product_card">
+                <div class="image_holder">
+                    <img onclick="imageClicked(this.id)" id="Food Grade Ethanol" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/food-grade-ethanol-1595571522-5528024.jpeg" alt="">
+                    <!-- <img src="images.jpeg" alt=""> -->
+                </div>
+                <!-- <span class="fa fa-chevron-left nav_button nvbl"></span> -->
+                <!-- <span class="fa fa-chevron-right nav_button nvbr"></span> -->
+                
+                <div class="product_heading">
+                    <h1>
+                        Food Grade Ethanol
+                    </h1>
+                </div>
+                
+            </div>
+         </div>
+    </section>
+    <!-- slide header -->
+
+    <!-- product section -->
+    <section class="product" id="product">
+        <div>
+        <h1>Food Grade Chemicals</h1>
+        <div class="underline"></div>
+        </div>
+        <div class="product_card_container">
+            <div class="product_card">
+                <div class="image_holder">
+                    <img onclick="imageClicked(this.id)" id="Potassium Metabisulfite Titanium Dioxide" class="scroll-page" id="id-1" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/potassium-metabisulfite-titanium-dioxide-1595333790-5528004.jpeg" alt="">
+                </div>
+
+              <div class="product_heading">
+                    <h1>
+                        Potassium Metabisulfite Titanium Dioxide
+                    </h1>
+              </div>
+            </div>
+            <div class="product_card">
+                <div class="image_holder">
+                    <img onclick="imageClicked(this.id)" id="Sodium Sulfite Solution" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/sodium-sulfite-solution-1595333713-5527999.jpeg" alt="">
+                    
+                </div>
+
+            <div class="product_heading">
+                    <h1>
+                        Sodium Sulfite Solution
+                    </h1>
+                </div>
+            </div>
+            <div class="product_card">
+                <div class="image_holder">
+                    <img onclick="imageClicked(this.id)" id="Copper Sulphate Powder" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/copper-sulfate-1595571273-5528010.jpeg" alt="">
+                </div>
+                
+                <div class="product_heading">
+                    <h1>
+                        Copper Sulphate Powder
+                    </h1>
+                </div>
+                
+            </div>
+
+            <div class="product_card">
+                <div class="image_holder">
+                    <img onclick="imageClicked(this.id)" id="Citric Acid" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/citric-acid-1595571235-5528005.jpeg" alt="">
+                </div>
+                
+                <div class="product_heading">
+                    <h1>
+                        Citric Acid
+                    </h1>
+                </div>
+                
+            </div>
+          
+        </div>
+       
+    
+        </section>
+        
+
+    <!-- product section -->
+    
+    <section class="button_gallery">
+        <div style="width: fit-content; margin: auto;">
+        <h1 class="new_heading">LR Grade Chemicals</h1>
+        <div class="underline"></div>
+        </div>
+        <div id="new_gallery">
+            <div id="new_strip">
+            <div class="new_frame">
+                <img onclick="imageClicked(this.id)" id="HPLC Gradient Grade Solvent"src="https://2.wlimg.com/product_images/bc-full/2020/7/7286909/watermark/hplc-gradient-grade-solvent-1595407750-5528872.jpeg" alt="">
+                <div class="frame_title">HPLC Gradient Grade Solvent</div>
+            </div>
+            <div class="new_frame">
+                <img onclick="imageClicked(this.id)" id="Isooctane HPLC Solvent" src="https://2.wlimg.com/product_images/bc-full/2020/7/7286909/watermark/isooctane-hplc-solvent-1595407838-5528873.jpeg" alt="">
+                <div class="frame_title">Isooctane HPLC Solvent</div>
+            </div>
+            <div class="new_frame">
+                <img onclick="imageClicked(this.id)" id="1-4 Dioxane HPLC Solvent" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/1-4-dioxane-hplc-solvent-1595407894-5528874.jpeg" alt="">
+                <div class="frame_title">1-4 Dioxane HPLC Solvent</div>
+            </div>
+            <div class="new_frame">
+                <img onclick="imageClicked(this.id)" id="Tetrachloromethane HPLC Solvent"src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/tetrachloromethane-hplc-solvent-1595407947-5528875.jpeg" alt="">
+                <div class="frame_title">Tetrachloromethane HPLC Solvent</div>
+            </div>
+            <div class="new_frame">
+                <img onclick="imageClicked(this.id)" id="Chloroform HPLC Solvent" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/chloroform-hplc-solvent-1595408027-5528876.jpeg" alt="">
+                <div class="frame_title">Chloroform HPLC Solvent</div>
+            </div>
+            <div class="new_frame">
+                <img onclick="imageClicked(this.id)" id="Cyclohexane HPLC Solvent" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/cyclohexane-hplc-solvent-1595408086-5528878.jpeg" alt="">
+                <div class="frame_title">Cyclohexane HPLC Solvent</div>
+            </div>
+            <div class="new_frame">
+                <img onclick="imageClicked(this.id)" id="Acetonitrile HPLC Solvent"src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/acetonitrile-hplc-solvent-1595408192-5528880.jpeg" alt="">
+                <div class="frame_title">Acetonitrile HPLC Solvent</div>
+            </div>
+            
+            </div>
+            <span id="new_left" onclick="right()"  class="fa fa-chevron-left"></span>
+        <span id="new_right" onclick="left()"    class="fa fa-chevron-right"></span>
+        </div>
+        
+    </section>
+    <!-- moving gallery -->
+    
+    <!-- client section -->
+    <section class="clients">
+        <div>
+        <h1>Our Clients</h1>
+        <div class="underline"></div>
+        </div>
+        <div class="client__container">
+            <div class="client">
+                <img src="photos/lenskart.png" alt="">
+                
+            </div>
+            <div class="client">
+                <img src="photos/bs_logo.png" alt="">
+            </div>
+            <div class="client">
+                <img src="photos/ngk_spark_plug_logo.png" alt="">
+
+            </div>
+            <div class="client">
+                <img src="data:image/png;base64,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" alt="">
+
+            </div>
+            <div class="client">
+                <img src="https://www.jbmgroup.com/wp-content/uploads/2021/02/thumbnail_JBM_Logo-01-01-01_gs.png" alt="">
+
+            </div>
+            <div class="client">
+                <img src="https://iocl.com/assets/images/logo.gif" alt="">
+
+            </div>
+            <div class="client">
+                <img src="https://wipehotwire.com/assets/images/logo.png" alt="">
+
+            </div>
+            <div class="client">
+                <img src="https://www.nipponsteel.com/en/common/images/header_logo01.png" alt="">
+
+            </div>
+            <div class="client">
+                <img src="https://www.munjalauto.com/wp-content/uploads/2018/09/2018-09-27.png" alt="">
+
+            </div>
+            <div class="client">
+                <img src="https://www.nitto.com/common/img/nitto_logo.svg" alt="">
+
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- client section -->
+
+    <!-- footer -->
+
+    <section class="footer">
+        <div class="footer_one">
+            <div class="q_contact">
+                <h3>
+                    Quick Contacts
+                </h3>
+                <span>
+                    <i class="fa fa-building"></i>
+                    Moonex Technologies
+                </span>
+                <span>
+                    <i class="fa fa-user fa-lg"></i>
+                    Hari Om Yadav
+                </span>
+                <span id="span3">
+                    <i class="fa fa-map-marker fa-lg"></i>
+                    <p>Shop No, 800, Mohna Rd, near Lokdeep Public School
+                    Bohra Enclave East, Bhraman Wara, Sector 1
+                    Ballabhgarh, Faridabad, Haryana 121004 </p>
+                </span>
+                <span>
+                    <i class="fa fa-mobile fa-2x"></i>
+                    +91-9870115678
+                </span>
+                <div class="footerline"></div>
+            </div>
+            
+            <div class="q_links">
+                <h3>
+                    Quick Links
+                </h3>
+                <a href="index.html">Home</a>
+                <a href="html/about_us.html">About Us</a>
+                <a href="html/products.html">Products</a>
+                <a href="html/contact.html">Contact</a>
+                <a href="html/contact.html#map">Site Map</a>
+                <div class="footerline"></div>
+
+            </div>
+            <div class="q_enquiry">
+                <h3>
+                    Quick Enquiry
+                </h3>
+                <form action="" method="post" id="form" class="form">
+                    <input id="name"type="text" name="name" placeholder="Name" required>
+                    <input id="telephone" type="tel" name="mobile" id="" placeholder="Phone" required>
+                    <input id="email"type="email" placeholder="Email" required>
+                   
+                    <textarea name="" id="textarea" cols="30" rows="5" placeholder="Leave a message for us" required></textarea>
+                    <button class="btn btn-success">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+        <div class="footer_two">
+            <div class="footer_content">
+                All Rights Reserved. Moonex Technologies (Terms of Use)<br>
+                <!-- Developed & Managed By Weblink.In Pvt. Ltd. -->
+            </div>
+            <div class="footer_logo">
+                <!-- <img src="https://catalog.wlimg.com/main-common/ei.png" alt=""> -->
+                <img style="cursor:pointer;cursor:hand" src="https://seal.starfieldtech.com/images/3/en/siteseal_sf_3_h_l_m.gif"  alt="SSL site seal - click to verify">
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+
+    <!-- invisible a buttons -->
+
+<a href="html/enquiry.html" style="display: none;"id="linktoEnquiry"></a>
+<a href=""style="display: none;" id="linktoProduct"></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ank031100@gmail.com" id="gmail" style="display: none;"  target="_blank"></a>
+<script src="js/slideShow.js"></script>
+<script>
+     
+        function imageClicked(id)
+{   
+    var photo=document.getElementById(id).getAttribute('src');
+
+    localStorage.setItem("titleSearch",id);
+    localStorage.setItem("productPic",photo);
+    var linktoEnquiry=document.getElementById("linktoEnquiry");
+                linktoEnquiry.click();
+} 
+
+function bannerClicked(id)
+{
+    var linkbutton=document.getElementById("linktoProduct");
+    linkbutton.setAttribute("href",id);
+    linkbutton.click();
+
+}
+
+window.onload=()=>{
+    var i=0;
+            var j=0;
+            var speed = 200;
+            txt="Welcome";
+            function typeWriter() {
+              if (i < txt.length) {
+                  document.getElementsByClassName("demo")[j].innerHTML += txt.charAt(i);
+                  setTimeout(typeWriter, speed);
+                i++;
+              }
+              
+              else 
+              {
+                 i=0;j++;
+                 if(j==1) 
+                 txt="To";
+                 else
+                 txt="Moonex";
+    
+                  typeWriter();
+              }
+            }
+            
+            typeWriter();
+
+
+}    
+           
+function whtsapWeb()
+{
+    window.location.href="https://api.whatsapp.com/send/?phone=919870115678&text&app_absent=0";
+}
+function gmail()
+{
+    document.getElementById("gmail").click();
+
+}
+
+        
+        var dropDown=document.getElementById("dropDown");
+        dropDown.addEventListener("scroll",()=>{
+            document.getElementsByTagName("body")[0].style.overflow=0;
+        })
+
+        window.addEventListener("resize",()=>{
+            var x=document.getElementById("mobile__on");
+        if(window.innerWidth>480)
+        {
+            x.style.display="none";
+        }
+        })
+
+        function navDrop(id)
+        {   
+            var str=id.substr(2);
+           console.log(str);
+            var linkbutton=document.getElementById("linktoProduct");
+            linkbutton.setAttribute("href",`html/products.html#nv${str}`);
+            document.getElementById("linktoProduct").click();
+        }
+        
+function goToHome(){
+    var a = document.createElement("a");
+    a.href="";
+    a.click();
+} 
+ 
+</script>   
+<script src="js/buttonSlideShow.js"></script>
+
+<script src="js/mobileNav.js"></script>
+
+</body>
+
+</html>
