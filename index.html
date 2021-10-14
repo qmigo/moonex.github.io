@@ -164,19 +164,19 @@
         </div>
         <div class="frame"> 
             <div class="slides" id="1">
-              <img onclick="imageClicked(this.id)" id="" src="photos/ss1.jpg" alt="">
+              <img onclick="bannerClicked(this.id)" id="html/products.html#nv1" src="photos/ss1.jpg" alt="">
               <div class="img_desc">JIS Test Powder</div>
             </div>
             <div class="slides" id="2">
-              <img onclick="imageClicked(this.id)" id="" src="photos/ss2.jpeg" alt="">
+              <img onclick="bannerClicked(this.id)" id="html/products.html#nv5" src="photos/ss2.jpeg" alt="">
               <div class="img_desc">LR Grade Chemicals</div>
             </div>
             <div class="slides" id="3">
-              <img onclick="imageClicked(this.id)" id="" src="photos/ss3.jpg" alt="">
+              <img onclick="bannerClicked(this.id)" id="html/products.html#nv6" src="photos/ss3.jpg" alt="">
               <div class="img_desc">Industrial Chemicals & Lubricant Oil</div>
             </div>
             <div class="slides" id="4">
-              <img onclick="imageClicked(this.id)" id="" src="photos/ss4.jpg" alt="">
+              <img onclick="bannerClicked(this.id)" id="html/products.html#nv7" src="photos/ss4.jpg" alt="">
               <div class="img_desc">Oils & Chemicals Absorbents Products</div>
             </div>
             <div class="slides" id="5">
@@ -358,7 +358,7 @@
                 </span>
                 <span>
                     <i class="fa fa-mobile fa-2x"></i>
-                    +91-9870115678
+                    +91-9870115678style="display: none;"
                 </span>
                 <div class="footerline"></div>
             </div>
@@ -406,7 +406,7 @@
     <!-- invisible a buttons -->
 
 <a href="html/enquiry.html" style="display: none;"id="linktoEnquiry"></a>
-
+<a href=""style="display: none;" id="linktoProduct"></a>
 <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ank031100@gmail.com" id="gmail" style="display: none;"  target="_blank"></a>
 <script src="js/slideShow.js"></script>
 <script>
@@ -419,7 +419,15 @@
     localStorage.setItem("productPic",photo);
     var linktoEnquiry=document.getElementById("linktoEnquiry");
                 linktoEnquiry.click();
-}   
+} 
+
+function bannerClicked(id)
+{
+    var linkbutton=document.getElementById("linktoProduct");
+    linkbutton.setAttribute("href",id);
+    linkbutton.click();
+
+}
 
     
             var i = 0;
@@ -472,13 +480,11 @@ function gmail()
         })
 
         function navDrop(id)
-        {   var str=id;
-            console.log(str);
-            str=id.substr(2);
-            console.log(str);
-            id="nv"+str;
-            var linkbutton=document.getElementById("linktoProduct").setAttribute("href",`html/products.html#${id}`);
-            
+        {   
+            var str=id.substr(2);
+           console.log(str);
+            var linkbutton=document.getElementById("linktoProduct");
+            linkbutton.setAttribute("href",`html/products.html#nv${str}`);
             document.getElementById("linktoProduct").click();
         }
         
