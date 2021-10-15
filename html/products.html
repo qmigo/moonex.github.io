@@ -1,0 +1,2784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonex Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/productsmobile.css">
+    <script src="https://use.fontawesome.com/1861f71565.js"></script>
+</head>
+<body> 
+    <!-- pop up -->
+    <section id="pop_up">
+        <div class="container pop_upLeft">
+                <img id="pop_upImage" src="" alt="">
+                <button class="btn btn-outline-success" id="bestPrice" data-toggle="button" aria-pressed="false" autocomplete="off" >Get Best Price</button>
+        </div>
+        <div class="container pop_upRight">
+            <h1 id="product_title"></h1><br>
+            <h4 class="fs">Product Details</h4>
+            <!-- <table class="product_table table">
+                <tr>
+                    <td>Material Used</td>
+                    <td class="product_details">Graphite</td>
+                </tr>
+                <tr>
+                    <td>Moisture Content</td>
+                    <td class="product_details">Pencil Lead 3mm strong</td>
+                </tr>
+                <tr>
+                    <td>Ignition Loss</td>
+                    <td class="product_details">20%</td>
+                </tr>
+                <tr>
+                    <td>Particle Density</td>
+                    <td class="product_details">2gm/L</td>
+                </tr>
+            </table> -->
+            <table class="product_table table" id="table">
+                   
+            </table>
+            <button class="btn btn-primary " id="interested">Yes! I am Interested</button>
+                <br>
+                <br>
+
+            </div>
+    </section>
+    <!-- pop up -->
+    <section id="body">
+            
+            <!-- navbar -->
+            <nav>
+        
+                <div class="mobile__toggle_off"  onclick="myFunction()">
+                    <span class="fa fa-bars" id="bars"></span>
+                    <span class="fa fa-times" id="wheel"></span>
+        
+                </div>
+                <div class="verticalDrop" id="vDropOn">
+                    <div class="vertical__box" id="vd1"onclick="navDrop(this.id)">JIS Test Powder</div>
+                    <div class="vertical__box" id="vd2"onclick="navDrop(this.id)">Test Dust</div>
+                    <div class="vertical__box" id="vd3"onclick="navDrop(this.id)">SAP Test Powder</div>
+                    <div class="vertical__box" id="vd4"onclick="navDrop(this.id)">Fuel Contaminants</div>
+                    <div class="vertical__box" id="vd5"onclick="navDrop(this.id)">Lab Grade Chemicals</div>
+                    <div class="vertical__box" id="vd6"onclick="navDrop(this.id)">Industrial Chemicals & Lubricant Oils</div>
+                    <div class="vertical__box" id="vd7"onclick="navDrop(this.id)">Rubber Processing Oil & Chemicals</div>
+                    <div class="vertical__box" id="vd8"onclick="navDrop(this.id)">Food Grade Chemicals</div>
+                    <div class="vertical__box" id="vd9"onclick="navDrop(this.id)">Textile Chemicals, Paint & Paper Chemicals</div>
+                    <div class="vertical__box" id="vd10"onclick="navDrop(this.id)">RO Antiscalant Chemicals</div>
+                    <div class="vertical__box" id="vd11"onclick="navDrop(this.id)">Cleaning Chemicals</div>
+                    <div class="vertical__box" id="vd12"onclick="navDrop(this.id)">Post Solder Cleaning Chemical Solvents</div>
+                    <div class="vertical__box" id="vd13"onclick="navDrop(this.id)">SMT Spare Parts</div>
+            </div>
+                <div class="mobile__toggle_on" id="mobile__on">
+                
+                    <div class="vertical__box"><a href="../index.html">Home</a></div>    
+                    <div class="vertical__box"><a href="about_us.html">About Us</a></div>
+                    <div class="vertical__box" id="vertical_product">Products
+                    
+                    
+                    </div>
+        
+                    <div class="vertical__box"><a href="contact.html">Contact</a></div>
+                    
+            </div>
+                
+                <div class="logo">
+                    <img src="../photos/logo.png" alt="" srcset="" onclick="goToHome()">
+                </div>
+                
+                <!-- <div class="menu"> -->
+                    <ul class="list__items">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li id="product_dropdown"><a href="products.html">Products </a>
+                        <div id="dropDown">
+        
+                                <!-- https://qmigo.github.io/moonex.github.io/html/products.html -->
+                                <div id="nvv1"onclick="navDrop(this.id)">JIS Test Powder</div>
+                                <div id="nvv2"onclick="navDrop(this.id)">Test Dust</div>
+                                <div id="nvv3"onclick="navDrop(this.id)">SAP Test Powder</div>
+                                <div id="nvv4"onclick="navDrop(this.id)">Fuel Contaminants</div>
+                                <div id="nvv5"onclick="navDrop(this.id)">Lab Grade Chemicals</div>
+                                <div id="nvv6"onclick="navDrop(this.id)">Industrial Chemicals & Lubricant Oils</div>
+                                <div id="nvv7"onclick="navDrop(this.id)">Rubber Processing Oil & Chemicals</div>
+                                <div id="nvv8"onclick="navDrop(this.id)">Food Grade Chemicals</div>
+                                <div id="nvv9"onclick="navDrop(this.id)">Textile Chemicals, Paint & Paper Chemicals</div>
+                                <div id="nvv10"onclick="navDrop(this.id)">RO Antiscalant Chemicals</div>
+                                <div id="nvv11"onclick="navDrop(this.id)">Cleaning Chemicals</div>
+                                <div id="nvv12"onclick="navDrop(this.id)">Post Solder Cleaning Chemical Solvents</div>
+                                <div id="nvv13"onclick="navDrop(this.id)">SMT Spare Parts</div>
+                            </div>
+                        </li>
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                <div class="contact__icons">
+                    <div class="icons__hover " >
+                        
+                        <span class="fa fa-mobile fa-lg " ></span>
+                    </div>
+                    <div class="contact_notification">
+                        <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                        <p> GST NO. : 06ANDPY6567A1ZT </p>
+                        <p> +91-9310687322</p>
+                        
+                    </div>
+        
+                    <div class="icons__hover">
+                        
+                        <span class="fa fa-envelope fa-sm" onclick="gmail()"></span>
+                    </div>
+                    <div class="contact_notification">
+                        <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                        <p> GST NO. : 06ANDPY6567A1ZT </p>
+                        <p> moonex@gmail.com</p>
+                        
+                    </div>
+                    <div class="icons__hover">
+                        
+                        <span class="fa fa-whatsapp fa-lg" onclick="whtsapWeb()"></span>
+                    </div>
+                    <div class="contact_notification">
+                        <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                        <p> GST NO. : 06ANDPY6567A1ZT </p>
+                        <p> +91-9310687322</p>
+                        
+                    </div>
+                    
+                </div>
+                 
+            </nav>
+           
+            <!-- navbar -->
+            <!-- Landscpe Image -->
+            <section id="main_image">
+            <img src="../photos/product.webp" alt="">
+            <div class="blkscrn"></div>
+            <div class="heading"><h1>Products</h1></div>
+            </section>
+            <!-- Landscpe Image -->
+
+            <!-- container class -->
+            <div id="product">
+                <div class="head container-fluid">
+                    <p>
+                        Moonex Technologies is one of the renowned and reliable company for LR Grade chemicals. We are the best manufacturer, supplier and exporter of LR Grade chemicals based in Haryana. We export and supply the laboratory chemicals in bulk and semi- bulk quantities. Our manufacturing unit is well-equipped with modern machines and quality controllers. We deals in many products such as LR Grade Chemicals, Industrial Chemicals & Lubricant Oil, Oils & Chemicals Absorbents Products, Textile Chemicals, Paint & Paper Chemicals and more. We are well known Oil Absorbent Suppliers and Oil Absorbent Manufacturer in Delhi NCR, For more details contact us.
+                    </p>
+                    <div id="nv1"class="sleekline"></div>
+                </div>
+                <section class="products">
+                    <!-- JIS Test Powder -->
+                    <div class="product_name">
+                        <h2>JIS Test Powder</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p></p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class="product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/filter-test-dust-1628275776-5930571.jpg" alt="" title="Filter Test Dust">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="1" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Filter Test Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class="product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders2-glass-beads-1608272161-5660389.jpeg" alt="">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="2" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">JIS Test Powders 2 Glass Beads</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class="product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-1-2-3-1608270670-5660335.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-1-2-3-1608270670-5660335.jpeg" alt="JIS Test Powders1 (JIS  Z 8901) (Class 1,2,3 Quartz Sand)" title="JIS Test Powders1 (JIS  Z 8901) (Class 1,2,3 Quartz Sand)">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="3" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">JIS Test Powders1 (JIS Z 8901) (Class 1,2,3 Quartz Sand)</h4>
+                        </div>   
+                        <div class="product">
+                            <img class="product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-4-9-talc-1608270975-5660343.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-4-9-talc-1608270975-5660343.jpeg" alt="Jis Test Powder (Class 4,9 Talc)" title="Jis Test Powder (Class 4,9 Talc)">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="4" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Jis Test Powder (Class 4,9 Talc)</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class="product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-5-10-fly-1608271133-5660347.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-5-10-fly-1608271133-5660347.jpeg" alt="JIS Test Powder (Class 5, 10)" title="JIS Test Powder (Class 5, 10)">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="5" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">JIS Test Powder (Class 5, 10)</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class="product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-7-8-11-kanto-1608271372-5660358.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-7-8-11-kanto-1608271372-5660358.jpeg" alt="JIS Test Powder (Class 7,8,11)" title="JIS Test Powder (Class 7,8,11)">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="6" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">JIS Test Powder (Class 7,8,11)</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class="product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-12-carbon-1608271659-5660368.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-12-carbon-1608271659-5660368.jpeg" alt="JIS Test Powder (Class 12 Carbon Black)" title="JIS Test Powder (Class 12 Carbon Black)">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="7" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">JIS Test Powder (Class 12 Carbon Black)</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-16-17-1608271836-5660377.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/jis-test-powders1-jis-z-8901-class-16-17-1608271836-5660377.jpeg" alt="JIS Test Powder (Class 16,17 Calcium carbonate (heavy))" title="JIS Test Powder (Class 16,17 Calcium carbonate (heavy))">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="8" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">JIS Test Powder (Class 16,17 Calcium carbonate (heavy))</h4>
+                        </div>
+                    
+                    </div>
+
+                    <div id="nv2"class="sleekline"></div>
+                    
+                    <!-- JIS Test Powder -->
+
+                    <!-- Test Dust -->
+                    
+                    <div class="product_name">
+                        <h2>Test Dust</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p></p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/aramco-32-samss-008-blended-with-salt-dust-1632473279-6008301.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/aramco-32-samss-008-blended-with-salt-dust-1632473279-6008301.jpeg" alt="ARAMCO 32-SAMSS-008 Blended with Salt Dust" title="ARAMCO 32-SAMSS-008 Blended with Salt Dust">
+                            <div class="desc">
+                                
+            
+                                <button onclick="func(this.id)" id="9" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ARAMCO 32-SAMSS-008 Blended with Salt Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/aramco-32-samss-008-blended-without-salt-dust-1632473331-6008304.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/aramco-32-samss-008-blended-without-salt-dust-1632473331-6008304.jpeg" alt="ARAMCO 32-SAMSS-008 Blended Without Salt Dust" title="ARAMCO 32-SAMSS-008 Blended Without Salt Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="10" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ARAMCO 32-SAMSS-008 Blended Without Salt Dust</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/ashrae-52-2-loading-dust-1632473362-6008305.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/ashrae-52-2-loading-dust-1632473362-6008305.jpeg" alt="ASHRAE 52.2 Loading Dust" title="ASHRAE 52.2 Loading Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="11" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ASHRAE 52.2 Loading Dust</h4>
+                        </div>   
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/bs-1701-coarse-def-stan-00-035-pt3-iss5-a1-1-2-dust-1632473486-6008315.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/bs-1701-coarse-def-stan-00-035-pt3-iss5-a1-1-2-dust-1632473486-6008315.jpeg" alt="BS 1701 Coarse DEF Stan 00-035 Pt3 Iss5 A1.1.2 Dust" title="BS 1701 Coarse DEF Stan 00-035 Pt3 Iss5 A1.1.2 Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="12" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">BS 1701 Coarse DEF Stan 00-035 Pt3 Iss5 A1.1.2 Dust</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/bs-1701-fine-dust-1632473601-6008326.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/bs-1701-fine-dust-1632473601-6008326.jpeg" alt="BS 1701 Fine Dust" title="BS 1701 Fine Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="13" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">BS 1701 Fine Dust</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/bs-en-60529-talc-dust-1632473646-6008330.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/bs-en-60529-talc-dust-1632473646-6008330.jpeg" alt="BS EN 60529 Talc Dust" title="BS EN 60529 Talc Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="14" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">BS EN 60529 Talc Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/def-stan-0755-b-mix-5050-test-dust-1632473686-6008332.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/def-stan-0755-b-mix-5050-test-dust-1632473686-6008332.jpeg" alt="DEF Stan 0755 B Mix 5050 Test Dust" title="DEF Stan 0755 B Mix 5050 Test Dust">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="15" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">DEF Stan 0755 B Mix 5050 Test Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/din40050-9-cement-flyash-mix-dust-1632473728-6008335.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/din40050-9-cement-flyash-mix-dust-1632473728-6008335.jpeg" alt="DIN40050 9 Cement Flyash Mix Dust" title="DIN40050 9 Cement Flyash Mix Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="16" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">DIN40050 9 Cement Flyash Mix Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/drb-en-1492001-dolomite-dust-1632473853-6008341.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/drb-en-1492001-dolomite-dust-1632473853-6008341.jpeg" alt="DRB EN 1492001 Dolomite Dust" title="DRB EN 1492001 Dolomite Dust">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="17" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">DRB EN 1492001 Dolomite Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/ece-reg-1-annex-7-0-212-sand-dust-1632473935-6008350.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/ece-reg-1-annex-7-0-212-sand-dust-1632473935-6008350.jpeg" alt="ECE Reg 1 Annex 7 0-212 Sand Dust" title="ECE Reg 1 Annex 7 0-212 Sand Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="18" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ECE Reg 1 Annex 7 0-212 Sand Dust</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m1-dust-1632473985-6008355.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m1-dust-1632473985-6008355.jpeg" alt="ISO 12103-2 M1 Dust" title="ISO 12103-2 M1 Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="19" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-2 M1 Dust</h4>
+                        </div>   
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m2-dust-1632474039-6008358.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m2-dust-1632474039-6008358.jpeg" alt="ISO 12103-2 M2 Dust" title="ISO 12103-2 M2 Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="20" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-2 M2 Dust</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m3-dust-1632474270-6008370.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m3-dust-1632474270-6008370.jpeg" alt="ISO 12103-2 M3 Dust" title="ISO 12103-2 M3 Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="21" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-2 M3 Dust</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m4-dust-1632474299-6008373.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m4-dust-1632474299-6008373.jpeg" alt="ISO 12103-2 M4 Dust" title="ISO 12103-2 M4 Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="22" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-2 M4 Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m5-dust-1632474329-6008375.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-2-m5-dust-1632474329-6008375.jpeg" alt="ISO 12103-2 M5 Dust" title="ISO 12103-2 M5 Dust">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="23" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-2 M5 Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-12016-a1-ultrafine-arizona-simulant-dust-1632474362-6008380.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-12016-a1-ultrafine-arizona-simulant-dust-1632474362-6008380.jpeg" alt="ISO 12103-12016 A1 Ultrafine Arizona Simulant Dust" title="ISO 12103-12016 A1 Ultrafine Arizona Simulant Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="24" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-12016 A1 Ultrafine Arizona Simulant Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-12016-a2-fine-arizona-simulant-dust-1632474398-6008383.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-12016-a2-fine-arizona-simulant-dust-1632474398-6008383.jpeg" alt="ISO 12103-12016 A2 Fine Arizona Simulant Dust" title="ISO 12103-12016 A2 Fine Arizona Simulant Dust">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="25" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-12016 A2 Fine Arizona Simulant Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-12016-a3-medium-arizona-simulant-dust-1632474430-6008386.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-12016-a3-medium-arizona-simulant-dust-1632474430-6008386.jpeg" alt="ISO 12103-12016 A3 Medium Arizona Simulant Dust" title="ISO 12103-12016 A3 Medium Arizona Simulant Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="26" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-12016 A3 Medium Arizona Simulant Dust</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-12016-a4-coarse-arizona-simulant-dust-1632474460-6008389.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-12103-12016-a4-coarse-arizona-simulant-dust-1632474460-6008389.jpeg" alt="ISO 12103-12016 A4 Coarse Arizona Simulant Dust" title="ISO 12103-12016 A4 Coarse Arizona Simulant Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="27" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 12103-12016 A4 Coarse Arizona Simulant Dust</h4>
+                        </div>   
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-std-810-fg-settling-105micron-dust-1632474488-6008392.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-std-810-fg-settling-105micron-dust-1632474488-6008392.jpeg" alt="MIL-STD-810 FG Settling 105micron Dust" title="MIL-STD-810 FG Settling 105micron Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="28" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">MIL-STD-810 FG Settling 105micron Dust</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-std-810-fgh-red-china-clay-dust-1632474536-6008397.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-std-810-fgh-red-china-clay-dust-1632474536-6008397.jpeg" alt="MIL-STD-810 FGH Red China Clay Dust" title="MIL-STD-810 FGH Red China Clay Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="29" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">MIL-STD-810 FGH Red China Clay Dust</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-std-810de-rtcado-160d-dust-1632474595-6008403.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-std-810de-rtcado-160d-dust-1632474595-6008403.jpeg" alt="MIL-STD-810DE Rtcado 160D Dust" title="MIL-STD-810DE Rtcado 160D Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="30" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">MIL-STD-810DE Rtcado 160D Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-std-810fgh-rtcado-160efg-dust-1632474632-6008405.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-std-810fgh-rtcado-160efg-dust-1632474632-6008405.jpeg" alt="MIL-STD-810FGH RTCADO-160EFG Dust" title="MIL-STD-810FGH RTCADO-160EFG Dust">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="31" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">MIL-STD-810FGH RTCADO-160EFG Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/r5-dust-1632474686-6008409.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/r5-dust-1632474686-6008409.jpeg" alt="R5 Dust" title="R5 Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="32" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">R5 Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/r10-fluorescent-dust-1632474728-6008415.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/r10-fluorescent-dust-1632474728-6008415.jpeg" alt="R10 Fluorescent Dust" title="R10 Fluorescent Dust">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="33" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">R10 Fluorescent Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/r10-dust-1632474771-6008419.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/r10-dust-1632474771-6008419.jpeg" alt="R10 Dust" title="R10 Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="34" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">R10 Dust</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/r20-dust-1632474836-6008425.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/r20-dust-1632474836-6008425.jpeg" alt="R20 Dust" title="R20 Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="35" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">R20 Dust</h4>
+                        </div>   
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/sae-j-726-coarse-dust-1632474942-6008432.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/sae-j-726-coarse-dust-1632474942-6008432.jpeg" alt="SAE J 726 Coarse Dust" title="SAE J 726 Coarse Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="36" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">SAE J 726 Coarse Dust</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/sae-j-726-fine-duct-1632475001-6008437.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/sae-j-726-fine-duct-1632475001-6008437.jpeg" alt="SAE J 726 Fine Duct" title="SAE J 726 Fine Duct">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="37" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">SAE J 726 Fine Duct</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/sae-j-997-3-2-1-coarse-carbon-dust-1632475030-6008438.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/sae-j-997-3-2-1-coarse-carbon-dust-1632475030-6008438.jpeg" alt="SAE J 997 3.2.1 Coarse Carbon Dust" title="SAE J 997 3.2.1 Coarse Carbon Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="38" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">SAE J 997 3.2.1 Coarse Carbon Dust</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/sae-j-997-3-2-2-fine-carbon-duct-1632475080-6008445.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/sae-j-997-3-2-2-fine-carbon-duct-1632475080-6008445.jpeg" alt="SAE J 997 3.2.2 Fine Carbon Duct" title="SAE J 997 3.2.2 Fine Carbon Duct">                           
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="39" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">SAE J 997 3.2.2 Fine Carbon Duct</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-full/2021/9/7286909/stjlr-00-5224-jlr-vehicle-test-dust-1632475113-6008448.jpeg" data-src="https://2.wlimg.com/product_images/bc-full/2021/9/7286909/stjlr-00-5224-jlr-vehicle-test-dust-1632475113-6008448.jpeg" alt="STJLR.00.5224 JLR Vehicle Test Dust" title="STJLR.00.5224 JLR Vehicle Test Dust">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="40" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">STJLR.00.5224 JLR Vehicle Test Dust</h4>
+                        </div>    
+                    </div>
+
+                    <div id="nv3"class="sleekline"></div>
+
+                    <!-- Test Dust -->
+
+                    <!-- SAP Test Powder -->
+                    <div class="product_name">
+                        <h2>SAP Test Powder</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p></p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/sap-test-powder-1608272414-5660407.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/sap-test-powder-1608272414-5660407.jpeg" alt="SAP Test Powder" title="SAP Test Powder">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="41" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">SAP Test Powder</h4>
+                        </div>                       
+                    </div>
+
+                    <div id="nv4" class="sleekline"></div>
+
+
+                    <!-- SAP Test Powder -->
+
+                    <!-- Fuel Contaminants -->
+                    <div class="product_name">
+                        <h2>Fuel Contaminants</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p></p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/amc-to-cs-670-no-carbon-fibre-1632476767-6008519.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/amc-to-cs-670-no-carbon-fibre-1632476767-6008519.jpeg" alt="AMC to CS-670 No Carbon Fibre" title="AMC to CS-670 No Carbon Fibre">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="42" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">AMC to CS-670 No Carbon Fibre</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/amc-to-cs-670-with-carbon-fibre-1632476555-6008520.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/amc-to-cs-670-with-carbon-fibre-1632476555-6008520.jpeg" alt="AMC to CS-670 with Carbon Fibre" title="AMC to CS-670 with Carbon Fibre">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="43" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">AMC to CS-670 with Carbon Fibre</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-e-005007e-table-fuel-contaminant-1632476755-6008524.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-e-005007e-table-fuel-contaminant-1632476755-6008524.jpeg" alt="MIL-E-005007E Table Fuel Contaminant" title="MIL-E-005007E Table Fuel Contaminant">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="44" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">MIL-E-005007E Table Fuel Contaminant</h4>
+                        </div>   
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-4020-cb5-fuel-contaminant-1632476823-6008535.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/iso-4020-cb5-fuel-contaminant-1632476823-6008535.jpeg" alt="ISO 4020 CB5 Fuel Contaminant" title="ISO 4020 CB5 Fuel Contaminant">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="45" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">ISO 4020 CB5 Fuel Contaminant</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-e-5007-rev-c-table-fuel-contaminant-1632476838-6008537.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/mil-e-5007-rev-c-table-fuel-contaminant-1632476838-6008537.jpeg" alt="MIL-E-5007 Rev C Table Fuel Contaminant" title="MIL-E-5007 Rev C Table Fuel Contaminant">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="46" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">MIL-E-5007 Rev C Table Fuel Contaminant</h4>
+                        </div>                       
+                    </div>
+
+                    <div id="nv5"class="sleekline"></div>
+
+
+                    <!-- Fuel Contaminannt -->
+
+                    <!-- Lab Grade Chemicals -->
+                    <div class="product_name">
+                        <h2>Lab Grade Chemicals</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p>
+                            Moonex Technologies is one of the renowned and reliable company for LR Grade chemicals. We are the best manufacturer, supplier and exporter of LR Grade chemicals based in Haryana. We export and supply the laboratory chemicals in bulk and semi- bulk quantities. Our manufacturing unit is well-equipped with modern machines and quality controllers which helps us check the quality of the products that we manufacture and supply. Our company is known for its competent quality, competitive price and quick service.<br> <br>
+
+                            
+                            We supply LR grade chemicals to different industries in bulk and also provide custom synthesis to meet the needs of our clients. Therefore get products from us as we are the best LR grade chemicals supplier India.
+                        </p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/hplc-gradient-grade-solvent-1595407750-5528872.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/hplc-gradient-grade-solvent-1595407750-5528872.jpeg" alt="HPLC Gradient Grade Solvent" title="HPLC Gradient Grade Solvent">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="47" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">HPLC Gradient Grade Solvent</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/isooctane-hplc-solvent-1595407838-5528873.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/isooctane-hplc-solvent-1595407838-5528873.jpeg" alt="Isooctane HPLC Solvent" title="Isooctane HPLC Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="48" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Isooctane HPLC Solvent</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/1-4-dioxane-hplc-solvent-1595407894-5528874.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/1-4-dioxane-hplc-solvent-1595407894-5528874.jpeg" alt="1-4 Dioxane HPLC Solvent" title="1-4 Dioxane HPLC Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="49" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">1-4 Dioxane HPLC Solvent</h4>
+                        </div>   
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/tetrachloromethane-hplc-solvent-1595407947-5528875.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/tetrachloromethane-hplc-solvent-1595407947-5528875.jpeg" alt="Tetrachloromethane HPLC Solvent" title="Tetrachloromethane HPLC Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="50" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Tetrachloromethane HPLC Solvent</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/chloroform-hplc-solvent-1595408027-5528876.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/chloroform-hplc-solvent-1595408027-5528876.jpeg" alt="Chloroform HPLC Solvent" title="Chloroform HPLC Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="51" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Chloroform HPLC Solvent</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/cyclohexane-hplc-solvent-1595408086-5528878.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/cyclohexane-hplc-solvent-1595408086-5528878.jpeg" alt="Cyclohexane HPLC Solvent" title="Cyclohexane HPLC Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="52" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Cyclohexane HPLC Solvent</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/acetonitrile-hplc-solvent-1595408192-5528880.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/acetonitrile-hplc-solvent-1595408192-5528880.jpeg" alt="Acetonitrile HPLC Solvent" title="Acetonitrile HPLC Solvent">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="53" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Acetonitrile HPLC Solvent</h4>
+                        </div>                       
+                    </div>
+
+                    <div id="nv6"class="sleekline"></div>
+
+                   
+                    <!-- Lab Grade Chemicals -->
+
+                    <!-- Industrial Chemicals & Lubricant Oils -->
+                    <div class="product_name">
+                        <h2>Industrial Chemicals & Lubricant Oils</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p></p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/industrial-filter-paper-1595411636-5529000.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/industrial-filter-paper-1595411636-5529000.jpeg" alt="Industrial Filter Paper" title="Industrial Filter Paper">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="54" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Industrial Filter Paper</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/cutting-oil-1595412373-5529029.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/cutting-oil-1595412373-5529029.jpeg" alt="Cutting Oil" title="Cutting Oil">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="55" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Cutting Oil</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/sodium-chloride-1595412544-5529035.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/sodium-chloride-1595412544-5529035.jpeg" alt="Sodium Chloride" title="Sodium Chloride">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="56" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Sodium Chloride</h4>
+                        </div>   
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/manganese-sulphate-1595412597-5529036.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/manganese-sulphate-1595412597-5529036.jpeg" alt="Manganese Sulphate" title="Manganese Sulphate">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="57" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Manganese Sulphate</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/sodium-hydroxide-1595412641-5529039.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/sodium-hydroxide-1595412641-5529039.jpeg" alt="Sodium Hydroxide" title="Sodium Hydroxide">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="58" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Sodium Hydroxide</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/dichloromethane-1595412705-5529040.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/dichloromethane-1595412705-5529040.jpeg" alt="Dichloromethane" title="Dichloromethane">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="59" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Dichloromethane</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/barium-carbonate-1595412753-5529041.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/barium-carbonate-1595412753-5529041.jpeg" alt="Barium Carbonate" title="Barium Carbonate">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="60" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Barium Carbonate</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/xylene-1595412809-5529043.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/xylene-1595412809-5529043.jpeg" alt="Xylene" title="Xylene">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="61" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Xylene</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/potassium-iodide-1595412877-5529047.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/potassium-iodide-1595412877-5529047.jpeg" alt="Potassium Iodide" title="Potassium Iodide">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="62" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Potassium Iodide</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/copper-sulphate-crystals-1595583501-5529049.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/copper-sulphate-crystals-1595583501-5529049.jpeg" alt="Copper Sulphate Crystals" title="Copper Sulphate Crystals">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="63" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Copper Sulphate Crystals</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/zinc-sulphate-1595413021-5529054.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/zinc-sulphate-1595413021-5529054.jpeg" alt="Zinc Sulphate" title="Zinc Sulphate">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="64" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Zinc Sulphate</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://catalog.wlimg.com/1/7286909/small-images/dry-solvents-2737943.jpg" data-src="https://catalog.wlimg.com/1/7286909/small-images/dry-solvents-2737943.jpg" alt="Dry Solvents" title="Dry Solvents">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="65" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Dry Solvents</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://catalog.wlimg.com/1/7286909/small-images/spectrophotometric-grade-solvent-2737944.jpg" data-src="https://catalog.wlimg.com/1/7286909/small-images/spectrophotometric-grade-solvent-2737944.jpg" alt="Spectrophotometric Grade Solvent" title="Spectrophotometric Grade Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="66" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Spectrophotometric Grade Solvent</h4>
+                        </div>
+                       
+                    </div>
+
+                    <div id="nv7"class="sleekline"></div>
+
+
+                    <!-- Industrial Chemicals & Lubricant Oils -->
+                    
+                    <!-- Rubber Processing oil and Chemicals  -->
+                    <div class="product_name">
+                        <h2>Rubber Processing Oil & Chemicals</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p></p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/mild-extracted-solvent-1595410901-5528978.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/mild-extracted-solvent-1595410901-5528978.jpeg" alt="Mild Extracted Solvent" title="Mild Extracted Solvent">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="67" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Mild Extracted Solvent</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/residual-aromatic-extracted-solvent-1595411005-5528983.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/residual-aromatic-extracted-solvent-1595411005-5528983.jpeg" alt="Residual Aromatic Extracted Solvent" title="Residual Aromatic Extracted Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="68" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Residual Aromatic Extracted Solvent</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/treated-distillate-aromatic-extracted-solvent-1595411069-5528986.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/treated-distillate-aromatic-extracted-solvent-1595411069-5528986.jpeg" alt="Treated Distillate Aromatic Extracted Solvent" title="Treated Distillate Aromatic Extracted Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="69" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Treated Distillate Aromatic Extracted Solvent</h4>
+                        </div> 
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/low-pca-oil-1595410801-5528969.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/low-pca-oil-1595410801-5528969.jpeg" alt="Low PCA Oil" title="Low PCA Oil">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="70" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Low PCA Oil</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://catalog.wlimg.com/1/7286909/small-images/rubber-process-oil-2737950.jpg" data-src="https://catalog.wlimg.com/1/7286909/small-images/rubber-process-oil-2737950.jpg" alt="Rubber Process Oil" title="Rubber Process Oil">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="71" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Rubber Process Oil</h4>
+                        </div>
+ 
+                    </div>
+
+                    <div id="nv8"class="sleekline"></div>
+
+
+                    <!-- Rubber Processing oil and Chemicals  -->
+
+                    <!-- Food Grade chemicals -->
+                    <div class="product_name">
+                        <h2>Food Grade Chemicals</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p>
+                            Food grade chemicals like sweeteners, preservatives, food colouring etc. are used in several foods and beverage producing companies. They use it to keep food fresh or add flavour to the food.<br><br>
+
+                            
+                            Our products are highly in demand in the market as it increases the demand for food products in the market. Moonex Technologies based in Haryana provides the best food grade chemicals to the customers worldwide. We are one of the best food grade chemical manufacturers in the market today.<br><br>
+                            
+                            Our products are highly in demand due to its exceptional quality. The chemicals that we supply to our customers are safe for consumption and tested in laboratories. We are recognised by both the international and national certifying agencies for our quality products and sincere efforts.<br><br>
+                            Order products in bulk and get it delivered directly at your commercial place.
+                        </p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/sodium-bicarbonate-1612415874-5712691.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/sodium-bicarbonate-1612415874-5712691.jpeg" alt="Sodium Bicarbonate" title="Sodium Bicarbonate">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="72" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Sodium Bicarbonate</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/ammonium-bisulphite-solution-1595333641-5527994.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/ammonium-bisulphite-solution-1595333641-5527994.jpeg" alt="Ammonium Bisulphite Solution" title="Ammonium Bisulphite Solution">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="73" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Ammonium Bisulphite Solution</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/sodium-sulfite-solution-1595333713-5527999.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/sodium-sulfite-solution-1595333713-5527999.jpeg" alt="Sodium Sulfite Solution" title="Sodium Sulfite Solution">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="74" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Sodium Sulfite Solution</h4>
+                        </div>  
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/potassium-metabisulfite-titanium-dioxide-1595333790-5528004.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/potassium-metabisulfite-titanium-dioxide-1595333790-5528004.jpeg" alt="Potassium Metabisulfite Titanium Dioxide" title="Potassium Metabisulfite Titanium Dioxide">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="75" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Potassium Metabisulfite Titanium Dioxide</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/citric-acid-1595571235-5528005.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/citric-acid-1595571235-5528005.jpeg" alt="Citric Acid" title="Citric Acid">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="76" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Citric Acid</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/copper-sulfate-1595571273-5528010.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/copper-sulfate-1595571273-5528010.jpeg" alt="Copper Sulphate Powder" title="Copper Sulphate Powder">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="77" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Copper Sulphate Powder</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/alum-chemical-1595571303-5528012.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/alum-chemical-1595571303-5528012.jpeg" alt="Alum Chemical" title="Alum Chemical">                           
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="78" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Alum Chemical</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/clay-powder-1595571336-5528014.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/clay-powder-1595571336-5528014.jpeg" alt="Clay Powder" title="Clay Powder">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="79" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Clay Powder</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/boric-acid-powder-1595571364-5528015.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/boric-acid-powder-1595571364-5528015.jpeg" alt="Boric Acid Powder" title="Boric Acid Powder">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="80" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Boric Acid Powder</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/solid-paraffin-wax-1595571397-5528017.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/solid-paraffin-wax-1595571397-5528017.jpeg" alt="Solid Paraffin Wax" title="Solid Paraffin Wax">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="81" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Solid Paraffin Wax</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/monosodium-glutamate-1632476307-5528018.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/9/7286909/monosodium-glutamate-1632476307-5528018.jpeg" alt="Monosodium Glutamate" title="Monosodium Glutamate">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="82" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Monosodium Glutamate</h4>
+                        </div>  
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/magnesium-trisilicate-1595598935-5528019.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/magnesium-trisilicate-1595598935-5528019.jpeg" alt="Magnesium Trisilicate" title="Magnesium Trisilicate">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="83" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Magnesium Trisilicate</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/anti-caking-agent-1595571455-5528022.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/anti-caking-agent-1595571455-5528022.jpeg" alt="Anti Caking Agent" title="Anti Caking Agent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="84" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Anti Caking Agent</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/food-grade-ethanol-1595571522-5528024.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/food-grade-ethanol-1595571522-5528024.jpeg" alt="Food Grade Ethanol" title="Food Grade Ethanol">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="85" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Food Grade Ethanol</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/polyether-polyol-1595572459-5528025.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/polyether-polyol-1595572459-5528025.jpeg" alt="Polyether Polyol" title="Polyether Polyol">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="86" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Polyether Polyol</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/lauryl-alcohol-1595572491-5528027.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/lauryl-alcohol-1595572491-5528027.jpeg" alt="Lauryl Alcohol" title="Lauryl Alcohol">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="87" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Lauryl Alcohol</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/calcium-alginate-1595572522-5528029.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/calcium-alginate-1595572522-5528029.jpeg" alt="Calcium Alginate" title="Calcium Alginate">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="88" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Calcium Alginate</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/3-acetylpyridine-1595334194-5528031.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/3-acetylpyridine-1595334194-5528031.jpeg" alt="3 Acetylpyridine" title="3 Acetylpyridine">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="89" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">3 Acetylpyridine</h4>
+                        </div>
+                       
+                    </div>
+
+                    <div id="nv9"class="sleekline"></div>
+
+
+                    <!-- Food Grade chemicals -->
+
+                    <!-- Textile Chemicals, Paint & Paper Chemicals -->
+                    <div class="product_name">
+                        <h2>Textile Chemicals, Paint & Paper Chemicals</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p>
+                            Our company Moonex Technologies, Haryana, is a focused, dynamic and rapidly increasing professionally managed company. Our core competence is to provide our customers with amazing chemicals and coating additives. We believe that even small products can bring great success to the customers in their business if they are excellent and amazing in quality.<br><br>
+
+                            
+                            We are one of the best manufacture, supplier and exporter of textile chemicals, paint and paper chemicals and much more. We provide our customers with 100% authentic and genuine products that are amazing to use. We supply products in different industries and sectors at a competitive price range.<br><br>
+                            
+                            Order our products online and use them for various applications. We are the best textile chemicals manufacturer in Faridabad, India.
+                        </p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/textile-defoamer-chemical-1595415000-5529150.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/textile-defoamer-chemical-1595415000-5529150.jpeg" alt="Textile Defoamer Chemical" title="Textile Defoamer Chemical">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="90" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Textile Defoamer Chemical</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/macro-silicone-emulsion-1595415068-5529155.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/macro-silicone-emulsion-1595415068-5529155.jpeg" alt="Macro Silicone Emulsion" title="Macro Silicone Emulsion">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="91" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Macro Silicone Emulsion</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/gold-binder-1595415331-5529166.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/gold-binder-1595415331-5529166.jpeg" alt="Gold Binder" title="Gold Binder">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="92" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Gold Binder</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/paint-additives-1595415380-5529168.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/paint-additives-1595415380-5529168.jpeg" alt="Paint Additives" title="Paint Additives">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="93" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Paint Additives</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/hydrophilic-amino-silicone-fluids-1595415429-5529170.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/hydrophilic-amino-silicone-fluids-1595415429-5529170.jpeg" alt="Hydrophilic Amino Silicone Fluids" title="Hydrophilic Amino Silicone Fluids">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="94" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Hydrophilic Amino Silicone Fluids</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/polyamide-epichlorohydrin-resin-1595415631-5529172.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/polyamide-epichlorohydrin-resin-1595415631-5529172.jpeg" alt="Polyamide Epichlorohydrin Resin" title="Polyamide Epichlorohydrin Resin">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="95" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Polyamide Epichlorohydrin Resin</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/dry-strength-resin-1595415736-5529174.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/dry-strength-resin-1595415736-5529174.jpeg" alt="Dry Strength Resin" title="Dry Strength Resin">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="96" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Dry Strength Resin</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/wet-strength-resin-1595415782-5529175.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/wet-strength-resin-1595415782-5529175.jpeg" alt="Wet Strength Resin" title="Wet Strength Resin">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="97" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Wet Strength Resin</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/thread-lubricant-1595416357-5529188.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/thread-lubricant-1595416357-5529188.jpeg" alt="Thread Lubricant" title="Thread Lubricant">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="98" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Thread Lubricant</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/yarn-lubricant-1595416419-5529191.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/yarn-lubricant-1595416419-5529191.jpeg" alt="Yarn Lubricant" title="Yarn Lubricant">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="99" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Yarn Lubricant</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/concentrated-textile-enzymes-1595416552-5529195.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/concentrated-textile-enzymes-1595416552-5529195.jpeg" alt="Concentrated Textile Enzymes" title="Concentrated Textile Enzymes">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="100" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Concentrated Textile Enzymes</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://catalog.wlimg.com/1/7286909/small-images/denim-auxiliaries-2737953.jpg" data-src="https://catalog.wlimg.com/1/7286909/small-images/denim-auxiliaries-2737953.jpg" alt="Denim Auxiliaries" title="Denim Auxiliaries">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="101" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Denim Auxiliaries</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://catalog.wlimg.com/1/7286909/small-images/wool-auxiliaries-2737954.jpg" data-src="https://catalog.wlimg.com/1/7286909/small-images/wool-auxiliaries-2737954.jpg" alt="Wool Auxiliaries" title="Wool Auxiliaries">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="102" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Wool Auxiliaries</h4>
+                        </div>
+                       
+                    </div>
+
+                    <div id="nv10"class="sleekline"></div>
+
+
+                    <!-- Textile Chemicals, Paint & Paper Chemicals -->
+
+                    <!-- RO Antiscalant Chemicals -->
+                    <div class="product_name">
+                        <h2>RO Antiscalant Chemicals</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p>
+                            Moonex Technologies, Haryana, is known as the best RO Antiscalant chemical exporter. We manufacture our products in our manufacturing unit using latest technology under the guidance of experts and professionals. No matter which brand or type of reverse osmosis system you have, our RO Antiscalant chemical is best for mitigating the process of scaling in the membranes of reverse osmosis of all kinds. It is a reliable and economical chemical which keeps the system healthy and increases its performance. Our company has a great range of Antiscalant chemicals for all kinds of reverse osmosis membranes. Get the best product from our company as we are the best RO Antiscalant chemicals supplier India.
+                        </p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/low-ph-ro-antiscalant-1595408761-5528895.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/low-ph-ro-antiscalant-1595408761-5528895.jpeg" alt="Low PH RO Antiscalant" title="Low PH RO Antiscalant">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="103" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Low PH RO Antiscalant</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/high-ph-ro-antiscalant-1595408851-5528898.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/high-ph-ro-antiscalant-1595408851-5528898.jpeg" alt="High PH RO Antiscalant" title="High PH RO Antiscalant">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="104" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">High PH RO Antiscalant</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/high-silica-inhibition-ro-antiscalant-1595409140-5528906.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/high-silica-inhibition-ro-antiscalant-1595409140-5528906.jpeg" alt="High Silica Inhibition RO Antiscalant" title="High Silica Inhibition RO Antiscalant">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="105" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">High Silica Inhibition RO Antiscalant</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/economical-ro-antiscalant-1595409331-5528910.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/economical-ro-antiscalant-1595409331-5528910.jpeg" alt="Economical RO Antiscalant" title="Economical RO Antiscalant">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="106" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Economical RO Antiscalant</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/antifoulant-chemical-1595409533-5528920.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/antifoulant-chemical-1595409533-5528920.jpeg" alt="Antifoulant Chemical" title="Antifoulant Chemical">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="107" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Antifoulant Chemical</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/ion-pairing-reagent-1595599134-5528934.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/ion-pairing-reagent-1595599134-5528934.jpeg" alt="Ion Pairing Reagent" title="Ion Pairing Reagent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="108" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Ion Pairing Reagent</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/ion-exchange-resin-1595409892-5528939.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/ion-exchange-resin-1595409892-5528939.jpeg" alt="Ion Exchange Resin" title="Ion Exchange Resin">                           
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="109" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Ion Exchange Resin</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://catalog.wlimg.com/1/7286909/small-images/organic-intermediates-2737956.jpg" data-src="https://catalog.wlimg.com/1/7286909/small-images/organic-intermediates-2737956.jpg" alt="Organic Intermediates" title="Organic Intermediates">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="110" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Organic Intermediates</h4>
+                        </div>
+                       
+                    </div>
+
+                    <div id="nv11"class="sleekline"></div>
+
+
+                    <!-- RO Antiscalant Chemicals -->
+
+                    <!-- Cleaning Chemicals -->
+                    <div class="product_name">
+                        <h2>Cleaning Chemicals</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p>
+                            Our company Moonex Technologies, Haryana, is the best company for cleaning chemicals. We are the finest and certified cleaning chemicals manufacturer in Haryana. Our focus is to provide our customers with products that match their exceptions and needs.<br><br>
+
+                            
+                            For us, their satisfaction is the primary concern. With the help of experts and professionals, we have successfully gained a huge name in the market as the best supplier and exporter. Our products are economic and don’t cause harm to the environment.<br><br>
+                            
+                            With the use of superior quality raw materials, latest technology and modern techniques, we manufacture products that are appreciated worldwide. We take order in bulk and supply always on time. Get the best quality cleaning chemicals in bulk at an affordable price in our company.
+                        </p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/oily-floor-cleaning-chemical-1595330809-5527849.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/oily-floor-cleaning-chemical-1595330809-5527849.jpeg" alt="Oily Floor Cleaner" title="Oily Floor Cleaner">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="111" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Oily Floor Cleaner</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/deodorant-floor-cleaner-1595330922-5527852.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/deodorant-floor-cleaner-1595330922-5527852.jpeg" alt="Deodorant Floor Cleaner" title="Deodorant Floor Cleaner">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="112" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Deodorant Floor Cleaner</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/painted-wall-cleaner-1595331038-5527859.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/painted-wall-cleaner-1595331038-5527859.jpeg" alt="Painted Wall Cleaner" title="Painted Wall Cleaner">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="113" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Painted Wall Cleaner</h4>
+                        </div>   
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/liquid-machine-cleaner-1595571003-5527879.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/liquid-machine-cleaner-1595571003-5527879.jpeg" alt="Liquid Machine Cleaner" title="Liquid Machine Cleaner">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="114" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Liquid Machine Cleaner</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/liquid-surface-cleaner-1595571115-5527892.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/liquid-surface-cleaner-1595571115-5527892.jpeg" alt="Liquid Surface Cleaner" title="Liquid Surface Cleaner">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="115" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Liquid Surface Cleaner</h4>
+                        </div>
+                    </div>
+
+                    <div id="nv12"class="sleekline"></div>
+
+
+                    <!-- Cleaning Chemicals -->
+
+                    <!-- Post Solder Cleaning Chemical Solvents -->
+                    <div class="product_name">
+                        <h2>Post Solder Cleaning Chemical Solvents</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p>
+                            Our company, Moonex Technologies, Haryana, is integrated with the latest technology and modern machines to manufacture post solder cleaning chemical solvents. We deliver our customers with the best products at an affordable price. We take care of the economic aspects such as the optimisation of energy flows and operating resources used and also safety-related concepts. Our company is one of the best post solder cleaning chemical solvents suppliers in India. We have attained this position due to our quality products and services. Along with certified and quality assured products, we provide our customers with amazing facilities and on-time deliveries. Due to these services, we have successfully made a huge network of customers around the country. Call us to order our products and get them delivered on time.
+                        </p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/screen-cleaning-solvent-1595332840-5527946.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/screen-cleaning-solvent-1595332840-5527946.jpeg" alt="Screen Cleaning Solvent" title="Screen Cleaning Solvent">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="116" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Screen Cleaning Solvent</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/battery-cleaning-solvent-1595332899-5527949.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/battery-cleaning-solvent-1595332899-5527949.jpeg" alt="Battery Cleaning Solvent" title="Battery Cleaning Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="117" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Battery Cleaning Solvent</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/saponifier-cleaning-solvent-1595333001-5527957.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/saponifier-cleaning-solvent-1595333001-5527957.jpeg" alt="Saponifier Cleaning Solvent" title="Saponifier Cleaning Solvent">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="118" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Saponifier Cleaning Solvent</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/solder-dross-reducing-powder-1595333088-5527961.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/solder-dross-reducing-powder-1595333088-5527961.jpeg" alt="Solder Dross Reducing Powder" title="Solder Dross Reducing Powder">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="119" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Solder Dross Reducing Powder</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/solder-tinning-flux-1595333160-5527964.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/solder-tinning-flux-1595333160-5527964.jpeg" alt="Solder Tinning Flux" title="Solder Tinning Flux">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="120" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Solder Tinning Flux</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/hot-air-leveling-flux-1595333248-5527969.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/hot-air-leveling-flux-1595333248-5527969.jpeg" alt="Hot Air Leveling Flux" title="Hot Air Leveling Flux">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="121" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Hot Air Leveling Flux</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/roller-tinning-salt-1595333337-5527974.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/roller-tinning-salt-1595333337-5527974.jpeg" alt="Roller Tinning Salt" title="Roller Tinning Salt">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="122" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Roller Tinning Salt</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/roller-tinning-flux-1595333387-5527979.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/roller-tinning-flux-1595333387-5527979.jpeg" alt="Roller Tinning Flux" title="Roller Tinning Flux">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="123" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Roller Tinning Flux</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/stainless-steel-soldering-flux-1595333445-5527982.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2020/7/7286909/watermark/stainless-steel-soldering-flux-1595333445-5527982.jpeg" alt="Stainless Steel Soldering Flux" title="Stainless Steel Soldering Flux">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="124" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Stainless Steel Soldering Flux</h4>
+                        </div>
+                       
+                    </div>
+
+                    <div id="nv13"class="sleekline"></div>
+                    <!-- Automation Control Devices -->
+
+                    <!-- SMT Spare Parts -->
+                    <div class="product_name">
+                        <h2>SMT Spare Parts</h2>
+                    </div>
+
+                    <div class="product_desc">
+                        <p></p>
+                    </div>
+
+                    <div class="product_gallery ">
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/ac-servo-motor-1625306396-5882958.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/ac-servo-motor-1625306396-5882958.jpeg" alt="AC Servo Motor" title="AC Servo Motor">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="125" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">AC Servo Motor</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/automotive-connectors-1625306456-5882963.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/automotive-connectors-1625306456-5882963.jpeg" alt="Automotive Connectors" title="Automotive Connectors">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="126" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Automotive Connectors</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/cm-8mm-feeder-1625306537-5882966.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/cm-8mm-feeder-1625306537-5882966.jpeg" alt="CM 8mm Feeder" title="CM 8mm Feeder">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="127" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">CM 8mm Feeder</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/cm402-8head-holder-1625306716-5882978.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/cm402-8head-holder-1625306716-5882978.jpeg" alt="CM402 8Head Holder" title="CM402 8Head Holder">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="128" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">CM402 8Head Holder</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/component-sensor-1625306887-5882982.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/component-sensor-1625306887-5882982.jpeg" alt="Component Sensor" title="Component Sensor">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="129" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Component Sensor</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/dek-camera-181054-1625307087-5882995.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/dek-camera-181054-1625307087-5882995.jpeg" alt="DEK Camera 181054" title="DEK Camera 181054">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="130" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">DEK Camera 181054</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/dek-motor-camera-y-bg65x50-ci-185003-1625307236-5883001.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/dek-motor-camera-y-bg65x50-ci-185003-1625307236-5883001.jpeg" alt="Dek Motor Camera Y Bg65X50-Ci 185003" title="Dek Motor Camera Y Bg65X50-Ci 185003">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="131" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Dek Motor Camera Y Bg65X50-Ci 185003</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/dummy-chip-component-1625307308-5883003.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/dummy-chip-component-1625307308-5883003.jpeg" alt="Dummy Chip Component" title="Dummy Chip Component">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="132" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Dummy Chip Component</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/fuji-vaccum-generator-1625307380-5883006.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/fuji-vaccum-generator-1625307380-5883006.jpeg" alt="Fuji Vaccum Generator" title="Fuji Vaccum Generator">
+                            <div class="desc">
+                                
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="133" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Fuji Vaccum Generator</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/juki-ef-8mm-ef-feeder-1625307453-5883009.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/juki-ef-8mm-ef-feeder-1625307453-5883009.jpeg" alt="JUKI EF 8mm EF Feeder" title="JUKI EF 8mm EF Feeder">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="134" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">JUKI EF 8mm EF Feeder</h4>
+                        </div>
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/juki-ke2010-t-axis-motor-1625307571-5883014.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/juki-ke2010-t-axis-motor-1625307571-5883014.jpeg" alt="JUKI KE2010 T Axis Motor" title="JUKI KE2010 T Axis Motor">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="135" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">JUKI KE2010 T Axis Motor</h4>
+                        </div>
+                           
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/juki-vibratory-feeder-1625307709-5883020.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/juki-vibratory-feeder-1625307709-5883020.jpeg" alt="Juki Vibratory Feeder" title="Juki Vibratory Feeder">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="136" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Juki Vibratory Feeder</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/multi-power-supply-1625307831-5883025.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/multi-power-supply-1625307831-5883025.jpeg" alt="Multi Power Supply" title="Multi Power Supply">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="137" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Multi Power Supply</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/nxt-16mm-feeder-kt16c-1625307932-5883030.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/nxt-16mm-feeder-kt16c-1625307932-5883030.jpeg" alt="NXT 16mm Feeder KT16C" title="NXT 16mm Feeder KT16C">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="138" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">NXT 16mm Feeder KT16C</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/one-board-microcomputer-1625308078-5883039.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/one-board-microcomputer-1625308078-5883039.jpeg" alt="One Board Microcomputer" title="One Board Microcomputer">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="139" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">One Board Microcomputer</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/panasonic-nozzles-1625308186-5883046.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/panasonic-nozzles-1625308186-5883046.jpeg" alt="Panasonic Nozzles" title="Panasonic Nozzles">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="140" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Panasonic Nozzles</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/placement-head-1625308401-5883054.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/placement-head-1625308401-5883054.jpeg" alt="Placement Head" title="Placement Head">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="141" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Placement Head</h4>
+                        </div>
+                           
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/revolver-auto-tool-assy-1625308535-5883056.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/revolver-auto-tool-assy-1625308535-5883056.jpeg" alt="Revolver Auto Tool Assy" title="Revolver Auto Tool Assy">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="142" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Revolver Auto Tool Assy</h4>
+                        </div>      
+                    
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/squeegee-assembly-1625308615-5883059.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/squeegee-assembly-1625308615-5883059.jpeg" alt="Squeegee Assembly" title="Squeegee Assembly">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="143" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Squeegee Assembly</h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/universal-ai-parts-1625308745-5883064.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/universal-ai-parts-1625308745-5883064.jpeg" alt="Universal AI Parts" title="Universal AI Parts">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="144" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">Universal AI Parts</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" ls-is-cached product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/yb-servo-driver-1625308849-5883075.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/yb-servo-driver-1625308849-5883075.jpeg" alt="YB Servo Driver" title="YB Servo Driver">                            
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="145" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">YB Servo Driver</h4>
+                        </div>
+
+                        <div class="product">
+                            <img class=" product__img" src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/yv-100ii-camera-kg9-m7210-10x-1625308960-5883079.jpeg" data-src="https://2.wlimg.com/product_images/bc-small/2021/8/7286909/watermark/yv-100ii-camera-kg9-m7210-10x-1625308960-5883079.jpeg" alt="YV 100II Camera KG9-M7210-10X" title="YV 100II Camera KG9-M7210-10X">
+                            <div class="desc">
+                                <p>
+                                    Grade : A+<br>
+                                    Quantity : 1200 kg<br>
+                                    Material : 1
+                                </p>
+                                <button onclick="func(this.id)" id="146" class="desc__btn">Enquiry</button>
+
+                            </div>
+                            <h4 class="product_title">YV 100II Camera KG9-M7210-10X</h4>
+                        </div>
+                       
+                    </div>
+
+                    <div class="sleekline"></div>
+
+
+                    <!-- SMT Spare Parts -->
+
+                </section>
+            </div>
+            <!-- container class -->
+            <!-- footer -->
+
+            <section class="footer">
+                <div class="footer_one">
+                    <div class="q_contact">
+                        <h3>
+                            Quick Contacts
+                        </h3>
+                        <span>
+                            <i class="fa fa-building"></i>
+                            Moonex Technologies
+                        </span>
+                        <span>
+                            <i class="fa fa-user fa-lg"></i>
+                            Hari Om Yadav
+                        </span>
+                        <span id="span3">
+                            <i class="fa fa-map-marker fa-lg"></i>
+                            <p>Shop No, 800, Mohna Rd, near Lokdeep Public School
+                            Bohra Enclave East, Bhraman Wara, Sector 1
+                            Ballabhgarh, Faridabad, Haryana 121004 </p>
+                        </span>
+                        <span>
+                            <i class="fa fa-mobile fa-2x"></i>
+                            +91-9870115678
+                        </span>
+                        <div class="footerline"></div>
+                    </div>
+                    
+                    <div class="q_links">
+                        <h3>
+                            Quick Links
+                        </h3>
+                        <a href="../index.html">Home</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="contact.html#map">Site Map</a>
+                        <div class="footerline"></div>
+        
+                    </div>
+                    <div class="q_enquiry">
+                        <h3>
+                            Quick Enquiry
+                        </h3>
+                        <form name="google-sheet" method="post" id="form" class="form">
+                            <input id="name"type="text" name="Name" placeholder="Name" required>
+                            <input id="telephone" type="tel" name="Mobile" id="" placeholder="Phone" required size="10" minlength="10" maxlength="10">
+                            <input id="email"type="email" name="E-mail" placeholder="Email" required>
+                           
+                            <textarea name="Message" id="textarea" cols="30" rows="5" placeholder="Leave a message for us" required></textarea>
+                            <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="footer_two">
+                    <div class="footer_content">
+                        All Rights Reserved. Moonex Technologies (Terms of Use)<br>
+                        <!-- Developed & Managed By Weblink.In Pvt. Ltd. -->
+                    </div>
+                    <div class="footer_logo">
+                        <!-- <img src="https://catalog.wlimg.com/main-common/ei.png" alt=""> -->
+                        <img style="cursor:pointer;cursor:hand" src="https://seal.starfieldtech.com/images/3/en/siteseal_sf_3_h_l_m.gif"  alt="SSL site seal - click to verify">
+                    </div>
+                </div>
+            </section>
+<a href="" id="linktoProduct" style="display: none;"></a>
+
+<a href="enquiry.html" style="display: none;"id="linktoEnquiry"></a>
+        <!-- footer -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ank031100@gmail.com" id="gmail" style="display: none;"  target="_blank"></a>
+ 
+    </section>
+    <script src="../js/productHover.js"></script>
+  
+    <script>
+
+
+var i=0;
+    function createEntry(td1,td2)
+    {
+    var table = document.getElementById("table");
+
+    // Create an empty <tr> element and add it to the 1st position of the table:
+    var row = table.insertRow(i);
+    i++;
+    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+
+    // Add some text to the new cells:
+    cell1.innerHTML = td1;
+    cell2.innerHTML = td2;
+
+    }
+
+    var arr=[];
+    for(let i=1;i<=124;i++)
+    {
+    var str=localStorage.getItem(`p${i}`);
+    arr[i]=JSON.parse(str);
+    }
+console.log(arr);
+function popUpDetails(title)
+{
+for(let i=1;i<=124;i++)
+{   
+    if(arr[i].title===title)
+    {
+    Object.entries(arr[i]).map(item=>{
+            if(item[0]==="title")
+            {   
+                ;
+                  
+            }
+            
+            else
+            {
+                if(item[0]==="desc")
+                createEntry("",item[1]);
+                else
+                createEntry(item[0],item[1]);
+            }
+        console.log(item);
+        })
+    }
+    }
+
+}
+        var popup_open=0;
+        // links enquiry page
+            var bestPrice=document.getElementById("bestPrice");
+            var interested=document.getElementById("interested");
+            function enquiry()
+            {
+                // var product_details={
+                //     src:`${document.getElementById("pop_upImage").getAttribute('src')}`,
+                //     title:`${document.getElementById("product_title").innerText}`,
+                //     td1:`${document.getElementsByClassName('product_details')[0].innerText}`,
+                //     td2:`${document.getElementsByClassName('product_details')[1].innerText}`,
+                //     td3:`${document.getElementsByClassName('product_details')[2].innerText}`,
+                //     td4:`${document.getElementsByClassName('product_details')[3].innerText}`
+                    
+                // }
+                // var string=JSON.stringify(product_details);
+                // localStorage.setItem("string",string);
+                // console.log(localStorage);
+                document.getElementById("product_title");
+
+                localStorage.setItem("titleSearch",document.getElementById("product_title").innerText);
+                localStorage.setItem("productPic",document.getElementById("pop_upImage").getAttribute('src'));
+                var linktoEnquiry=document.getElementById("linktoEnquiry");
+                linktoEnquiry.click();
+                // window.location.href="http://127.0.0.1:5501/html/enquiry.html";
+            }
+            
+            bestPrice.addEventListener("click",enquiry);
+            interested.addEventListener("click",enquiry)
+        
+            // check click on pop up or not
+            document.addEventListener("click",checkPopup);
+            function checkPopup(e)
+            {
+            var popup=document.getElementById("pop_up");
+            var sh=window.getComputedStyle(popup).height;
+            sh=sh.replace("px","");
+            sh=parseInt(sh);
+            var sw=window.getComputedStyle(popup).width;
+            sw=sw.replace("px","");
+            sw=parseInt(sw);
+            var w=window.innerWidth;
+            var h=window.innerHeight;
+            var left=popup.style.left=(w-sw)/2;
+            var top=popup.style.top=(h-sh)/2;
+        
+                if(popup_open===1)
+                {   
+                    if(e.clientX>left && e.clientX<left+sw  && e.clientY>top && e.clientY <top + sh)
+                    ;
+                    else
+                    {
+                    popup.style.display="none";
+                    document.getElementsByTagName("body")[0].style.overflowY="scroll";
+            document.getElementById("body").style.filter="blur(0px)";
+                }
+                }
+            }
+        
+            
+        function func(id)
+        {   
+            popup_open=1;
+            id=parseInt(id);
+            var img=document.getElementsByClassName("product__img")[id-1];
+            var title=document.getElementsByClassName("product_title")[id-1].innerHTML;
+            var src=img.getAttribute("src");
+            
+            var popupImage=document.getElementById("pop_upImage");
+            var pop_upTitle=document.getElementById("product_title");
+            popupImage.setAttribute("src",`${src}`);
+            pop_upTitle.innerText=title;
+            popUpDetails(title);
+
+            var popup=document.getElementById("pop_up");
+            var w=window.innerWidth;
+            document.getElementsByTagName("body")[0].style.overflowY="hidden";
+            document.getElementsByTagName("body")[0].style.width=w+"px";
+        
+            document.getElementById("body").style.filter="blur(2px)";    
+            var w=window.innerWidth;
+            var h=window.innerHeight;
+            var sw=window.getComputedStyle(popup).width;
+            sw=sw.replace("px","");
+            sw=parseInt(sw);
+            var sh=window.getComputedStyle(popup).height;
+            sh=sh.replace("px","");
+            sh=parseInt(sh);
+           
+            var left=popup.style.left=(w-sw)/2+"px";
+            var top=popup.style.top=window.pageYOffset+(h-sh)/2+"px";
+            popup.style.display="flex";
+        
+        }
+        
+        
+function whtsapWeb()
+{
+    window.location.href="https://api.whatsapp.com/send/?phone=919870115678&text&app_absent=0";
+}
+function gmail()
+{
+    document.getElementById("gmail").click();
+
+}
+function navDrop(id)
+        {   
+            var linkbutton=document.getElementById("linktoProduct").setAttribute("href",`#${id}`);
+            
+            document.getElementById("linktoProduct").click();
+        }
+        
+        var dropDown=document.getElementById("dropDown");
+        dropDown.addEventListener("scroll",()=>{
+            document.getElementsByTagName("body")[0].style.overflow=0;
+        })
+
+        window.addEventListener("resize",()=>{
+            var x=document.getElementById("mobile__on");
+        if(window.innerWidth>480)
+        {
+            x.style.display="none";
+        }
+        })
+
+        function navDrop(id)
+        {   
+            
+            if(window.getComputedStyle(document.getElementById("vDropOn")).display==="none")
+            {
+                id=id.substr(2);
+                console.log("n"+id);
+            var linkbutton=document.getElementById("linktoProduct").setAttribute("href",`products.html#n${id}`);
+
+            document.getElementById("linktoProduct").click();
+
+            }
+                        else{
+            var str=id;
+            console.log(str);
+            str=id.substr(2);
+            console.log(str);
+            id="nv"+str;
+            var linkbutton=document.getElementById("linktoProduct").setAttribute("href",`products.html#${id}`);
+            var y=document.getElementById("vDropOn");
+            var bars=document.getElementById("bars");
+            var wheel=document.getElementById("wheel");
+            y.style.display="none";
+            bars.style.display="flex";
+            wheel.style.display="none";
+            document.getElementById("linktoProduct").click();
+        }
+            
+        }
+        
+        function goToHome(){
+    var a = document.createElement("a");
+    a.href="../index.html";
+    a.click();
+} 
+   
+
+        </script>
+    <script src="../js/mobileNav.js"></script>
+    <script src="../js/form.js"></script>
+
+
+</body>
+</html>
