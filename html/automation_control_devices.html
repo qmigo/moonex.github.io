@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonex Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/productsmobile.css">
+    <script src="https://use.fontawesome.com/1861f71565.js"></script>
+    <style>
+       
+        a{
+            text-decoration: none;
+            color: black;  
+        }
+    </style>
+</head>
+<body> 
+    <!-- pop up -->
+    <section id="pop_up">
+        <div class="container pop_upLeft">
+                <img id="pop_upImage" src="" alt="">
+                <button class="btn btn-outline-success" id="bestPrice" data-toggle="button" aria-pressed="false" autocomplete="off" >Get Best Price</button>
+        </div>
+        <div class="container pop_upRight">
+            <h1 id="product_title"></h1><br>
+            <h4 class="fs">Product Details</h4>
+            
+            <table class="product_table table" id="table">
+                   
+            </table>
+            <button class="btn btn-primary " id="interested">Yes! I am Interested</button>
+                <br>
+                <br>
+
+            </div>
+    </section>
+    <!-- pop up -->
+    <section id="body">
+            
+            <!-- navbar -->
+            <nav>
+        
+                <div class="mobile__toggle_off"  onclick="myFunction()">
+                    <span class="fa fa-bars" id="bars"></span>
+                    <span class="fa fa-times" id="wheel"></span>
+        
+                </div>
+                <div class="verticalDrop" id="vDropOn">
+                    <div class="vertical__box" id="vd1"onclick="navDrop(this.id)">JIS Test Powder</div>
+                    <div class="vertical__box" id="vd2"onclick="navDrop(this.id)">Test Dust</div>
+                    <div class="vertical__box" id="vd3"onclick="navDrop(this.id)">SAP Test Powder</div>
+                    <div class="vertical__box" id="vd4"onclick="navDrop(this.id)">Fuel Contaminants</div>
+                    <div class="vertical__box" id="vd5"onclick="navDrop(this.id)">Lab Grade Chemicals</div>
+                    <div class="vertical__box" id="vd6"onclick="navDrop(this.id)">Industrial Chemicals & Lubricant Oils</div>
+                    <div class="vertical__box" id="vd7"onclick="navDrop(this.id)">Rubber Processing Oil & Chemicals</div>
+                    <div class="vertical__box" id="vd8"onclick="navDrop(this.id)">Food Grade Chemicals</div>
+                    <div class="vertical__box" id="vd9"onclick="navDrop(this.id)">Textile Chemicals, Paint & Paper Chemicals</div>
+                    <div class="vertical__box" id="vd10"onclick="navDrop(this.id)">RO Antiscalant Chemicals</div>
+                    <div class="vertical__box" id="vd11"onclick="navDrop(this.id)">Cleaning Chemicals</div>
+                    <div class="vertical__box" id="vd12"onclick="navDrop(this.id)">Post Solder Cleaning Chemical Solvents</div>
+                    <div class="vertical__box" id="vd13"onclick="navDrop(this.id)">Automation Control Devices</div>
+                    <div class="vertical__box" id="vd14"onclick="navDrop(this.id)">SMT Spare Parts</div>
+            </div>
+                <div class="mobile__toggle_on" id="mobile__on">
+                
+                    <div class="vertical__box"><a href="../index.html">Home</a></div>    
+                    <div class="vertical__box"><a href="about_us.html">About Us</a></div>
+                    <div class="vertical__box" id="vertical_product">Products
+                    
+                    
+                    </div>
+        
+                    <div class="vertical__box"><a href="contact.html">Contact</a></div>
+                    
+            </div>
+                
+                <div class="logo">
+                    <img src="../photos/logo.png" alt="" srcset="" onclick="goToHome()">
+                </div>
+                
+                <!-- <div class="menu"> -->
+                    <ul class="list__items">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li id="product_dropdown"><a href="products.html">Products </a>
+                        <div id="dropDown">
+        
+                                <!-- https://qmigo.github.io/moonex.github.io/html/products.html -->
+                                <div id="nvv1"onclick="navDrop(this.id)">JIS Test Powder</div>
+                                <div id="nvv2"onclick="navDrop(this.id)">Test Dust</div>
+                                <div id="nvv3"onclick="navDrop(this.id)">SAP Test Powder</div>
+                                <div id="nvv4"onclick="navDrop(this.id)">Fuel Contaminants</div>
+                                <div id="nvv5"onclick="navDrop(this.id)">Lab Grade Chemicals</div>
+                                <div id="nvv6"onclick="navDrop(this.id)">Industrial Chemicals & Lubricant Oils</div>
+                                <div id="nvv7"onclick="navDrop(this.id)">Rubber Processing Oil & Chemicals</div>
+                                <div id="nvv8"onclick="navDrop(this.id)">Food Grade Chemicals</div>
+                                <div id="nvv9"onclick="navDrop(this.id)">Textile Chemicals, Paint & Paper Chemicals</div>
+                                <div id="nvv10"onclick="navDrop(this.id)">RO Antiscalant Chemicals</div>
+                                <div id="nvv11"onclick="navDrop(this.id)">Cleaning Chemicals</div>
+                                <div id="nvv12"onclick="navDrop(this.id)">Post Solder Cleaning Chemical Solvents</div>
+                                <div id="nvv13"onclick="navDrop(this.id)">Automation Control Devices</div>
+                                <div id="nvv14"onclick="navDrop(this.id)">SMT Spare Parts</div>
+                            </div>
+                        </li>
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                <div class="contact__icons">
+                    <div class="icons__hover " >
+                        
+                        <span class="fa fa-mobile fa-lg " ></span>
+                    </div>
+                    <div class="contact_notification">
+                        <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                        <p> GST NO. : 06ANDPY6567A1ZT </p>
+                        <p> +91-9310687322</p>
+                        
+                    </div>
+        
+                    <div class="icons__hover">
+                        
+                        <span class="fa fa-envelope fa-sm" onclick="gmail()"></span>
+                    </div>
+                    <div class="contact_notification">
+                        <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                        <p> GST NO. : 06ANDPY6567A1ZT </p>
+                        <p> moonex@gmail.com</p>
+                        
+                    </div>
+                    <div class="icons__hover">
+                        
+                        <span class="fa fa-whatsapp fa-lg" onclick="whtsapWeb()"></span>
+                    </div>
+                    <div class="contact_notification">
+                        <p> BALLABHGARH, FARIDABAD, HARYANA</p>
+                        <p> GST NO. : 06ANDPY6567A1ZT </p>
+                        <p> +91-9310687322</p>
+                        
+                    </div>
+                    
+                </div>
+                 
+            </nav>
+           
+            <!-- navbar -->
+            <!-- Landscpe Image -->
+            <section id="main_image">
+            <img src="../photos/product.webp" alt="">
+            <div class="blkscrn"></div>
+            <div class="heading"><h1>Products</h1></div>
+            </section>
+            <!-- Landscpe Image -->
+
+            <!-- container class -->
+            <div id="product">
+
+                <div class="head container-fluid">
+                    <p>
+                        Moonex Technologies is one of the renowned and reliable company for Lab Grade chemicals. We are the best manufacturer, supplier and exporter of LR Grade chemicals based in Haryana. We export and supply the laboratory chemicals in bulk and semi- bulk quantities. Our manufacturing unit is well-equipped with modern machines and quality controllers. We deals in many products such as LR Grade Chemicals, Industrial Chemicals & Lubricant Oil, Oils & Chemicals Absorbents Products, Textile Chemicals, Paint & Paper Chemicals and more. We are well known Oil Absorbent Suppliers and Oil Absorbent Manufacturer in Delhi NCR, For more details contact us.
+                    </p>
+                    <div id="nv1"class="sleekline"></div>
+                </div>
+                
+
+                <div class="product_name">
+                    <h2>Sensors</h2>
+                </div>
+
+                <div class="product_desc">
+                    <p></p>
+                </div>
+
+                <div class="product_gallery">
+                    <div class="product">
+                        <img src="https://www.ato.com/content/images/thumbs/0000813_through-beam-photoelectric-sensor_550.jpeg" alt="" class="product__img">
+                        <div class="desc">
+                        </div>
+                        <h4 class="product_title">Photoelectric Sensor </h4>
+                    </div>
+
+                    <div class="product">
+                        <img src="https://www.omron-ap.co.in/service_support/FAQ/FAQ01171/FAQ01171_01.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title">Photomicro sensor </h4>
+                    </div>
+
+                    <div class="product">
+                        <img src="https://www.elprocus.com/wp-content/uploads/2014/09/9-1-2014-11-29-34-AM.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title"> Fiber optic sensor </h4>
+                    </div>
+                
+
+                <div class="product">
+                    <img src="https://www.keyence.com/Images/ss_measurement_library_type_ultrasonic_index_img_01_1582648.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  Displacement sensor  </h4>
+                </div>
+            
+
+                 <div class="product">
+                        <img src="https://www.pepperl-fuchs.com/global/campaigns/cumulus_img/EC_SS_20190604_01_r2300_prt_technology_rdax_75.JPG" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title">   Lidar  </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://5.imimg.com/data5/NQ/XE/MY-53968610/electrical-wired-door-sensor-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">   Door sensor   </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://www.nexinstrument.com/thumbnail.asp?file=assets/images/NA2-N12.jpg&maxx=600&maxy=600" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">    Area sensor   </h4>
+                </div>
+                
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/411Vi6amGwL.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  Proximaity sensor  </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://3.imimg.com/data3/KP/QT/MY-2132084/rotary-position-sensor-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  Rotary sensor </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://3.imimg.com/data3/CX/LP/MY-988356/temp_18b20-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  Temp sensor </h4>
+                </div>
+                
+        
+                </div>
+
+                <div id="nv2"class="sleekline"></div>
+
+                
+                <div class="product_name">
+                    <h2>Filed instruments </h2>
+                </div>
+
+                <div class="product_desc">
+                    <p></p>
+                </div>
+
+                <div class="product_gallery">
+
+                <div class="product">
+                    <img src="https://4.imimg.com/data4/II/HF/MY-20258949/temperature-transmitter-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title"> Temprature transmitter </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://www.pce-instruments.com/english/slot/2/artimg/large/pce-instruments-pressure-sensor-tr-ps2w-2bar-5890910_1270376.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  Pressure sensor </h4>
+                </div>
+                <div class="product">
+                    <img src="https://www.bdsensors.de/fileadmin/_processed_/c/4/csm_XMPi_2020_0f941aadc9.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  Pressure transmitter </h4>
+                </div>
+
+                </div>
+
+
+                <div id="nv3"class="sleekline"></div>
+
+                <div class="product_name">
+                    <h2>Machine vision </h2>
+                </div>
+
+                <div class="product_desc">
+                    <p></p>
+                </div>
+
+                <div class="product_gallery">
+
+                    <div class="product">
+                        <img src="https://3.imimg.com/data3/LI/YB/MY-2132084/vision-sensor-500x500.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title"> VISION SENSOR </h4>
+                    </div>
+    
+                    <div class="product">
+                        <img src="https://5.imimg.com/data5/LD/DL/MY-15169241/motor-rotary-optical-encoder-500x500.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title">  ENCODER </h4>
+                    </div>
+                    
+    
+                    </div>
+
+                <div id="nv4"class="sleekline"></div>
+
+
+                    <div class="product_name">
+                        <h2>SAFETY  </h2>
+                    </div>
+    
+                    <div class="product_desc">
+                        <p></p>
+                    </div>
+    
+                    <div class="product_gallery">
+    
+                        <div class="product">
+                            <img src="https://cdn.sickcn.com/media/895/4/64/464/IM0017464.png" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title"> SAFETY LIGHT CURTAIN  </h4>
+                        </div>
+        
+                        <div class="product">
+                            <img src="https://5.imimg.com/data5/DC/WJ/MY-5881685/safety-plc-expandable-500x500.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  SAFETY CONTROLLER  </h4>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://5.imimg.com/data5/SA/JT/MY-2640429/safety-switches-500x500.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  SAFETY SWITCHES   </h4>
+                        </div>
+                        
+                     </div>
+
+                     <div id="nv5"class="sleekline"></div>
+
+                         <div class="product_name">
+                         <h2>CONTROLLER </h2>
+                     </div>
+     
+                     <div class="product_desc">
+                         <p></p>
+                     </div>
+
+                     <div class="product_gallery">
+    
+                        <div class="product">
+                            <img src="https://www.autonics.com/web/2018/06/23/8/49/46/f7f1de16-2ee9-4d86-add4-5fe70e3afed4.png" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">TEMPRATURE CONTROLLER  </h4>
+                        </div>
+        
+                        <div class="product">
+                            <img src="https://5.imimg.com/data5/XT/HU/BB/SELLER-7063318/proximity-sensor-strock-counter-counters-500x500.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  COUNTER   </h4>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://5.imimg.com/data5/CG/PR/MY-2790995/timer-counter-500x500.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  TIMER    </h4>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://3.imimg.com/data3/ML/UV/MY-4032899/digital-panel-meter-250x250.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  DIGITAL PANEL METER   </h4>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/2/JK/IL/XW/2435509/digital-water-level-sensor-recorder-500x500.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  RECORDERS    </h4>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://5.imimg.com/data5/ED/HF/MY-31909363/red-light-indicator-500x500.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  Indicator  </h4>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://5.imimg.com/data5/OH/JU/MY-41395391/digital-display-unit-for-calibration-500x500.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  Digital display unit     </h4>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://www.autonics.com/web/2018/06/15/1/38/56/491935f2-c043-4df5-a25d-b3d4be692e9a.png" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  Sensor controller    </h4>
+                        </div>
+                        
+                        <div class="product">
+                            <img src="https://5.imimg.com/data5/FJ/IR/MY-10580698/red-lion-hmi-500x500.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  HMI   </h4>
+                        </div>
+
+                        <div class="product">
+                            <img src="https://www.syslogic.com/ProductImages/deu/Industrial_Box_PC_C7_01.jpg" alt="" class="product__img">
+                            <div class="desc">       
+                            </div>
+                            <h4 class="product_title">  INDUSTRIAL PC    </h4>
+                        </div>
+                     </div>
+
+                     <div id="nv6"class="sleekline"></div>
+
+                     <div class="product_name">
+                     <h2>POWER ELECTRONICS </h2>
+                 </div>
+ 
+                 <div class="product_desc">
+                     <p></p>
+                 </div>
+
+                 <div class="product_gallery">
+    
+                    <div class="product">
+                        <img src="https://5.imimg.com/data5/PO/AT/MY-69662899/computer-smps-500x500.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title"> SMPS  </h4>
+                    </div>
+    
+                    <div class="product">
+                        <img src="https://cdn.sparkfun.com//assets/parts/9/9/8/2/13015-01.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title">  SOLID STATE RELAY  </h4>
+                    </div>
+
+                    <div class="product">
+                        <img src="https://www.eurotherm.com/wp-content/uploads/2018/10/epack-power-controller.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title">  POWER CONTROLLERS    </h4>
+                    </div>
+                    
+                 </div>
+
+                 <div id="nv7"class="sleekline"></div>
+
+                     <div class="product_name">
+                     <h2>MOTION DEVICES  </h2>
+                 </div>
+ 
+                 <div class="product_desc">
+                     <p></p>
+                 </div>
+
+                 <div class="product_gallery">
+    
+                    <div class="product">
+                        <img src="https://5.imimg.com/data5/JW/XT/MY-3369968/multi-axis-motion-controllers-500x500.png" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title"> MOTION CONTROLLER  </h4>
+                    </div>
+    
+                    <div class="product">
+                        <img src="https://5.imimg.com/data5/UN/SB/MY-45226114/closed-loop-stepper-motor-500x500.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title">  CLOSER LOOP STEEPER   </h4>
+                    </div>
+
+                    <div class="product">
+                        <img src="https://www.ato.com/content/images/thumbs/0000513_bipolar-stepper-motor-driver-2-phase-dc-20-30v_550.jpeg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title">  2 PHASE STEEPER MOTION DRIVE     </h4>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="https://www.orientalmotor.com/images/stepper-motors/5-phase-driver-cvd524-k-350px.jpg" alt="" class="product__img">
+                        <div class="desc">       
+                        </div>
+                        <h4 class="product_title">  5 PHASE STEEPER MOTION DRIVE     </h4>
+                    </div>
+                    
+                 </div>
+
+                 <div id="nv8"class="sleekline"></div>
+
+                 <div class="product_name">
+                 <h2>CONNECTIVITY  </h2>
+             </div>
+
+             <div class="product_desc">
+                 <p></p>
+             </div>
+
+             <div class="product_gallery">
+
+                <div class="product">
+                    <img src="https://3.imimg.com/data3/GX/BY/MY-2157164/io-terminal-board-adam-250x250.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title"> I/O TERMINAL BLOCK  </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://5.imimg.com/data5/IH/FH/MY-25302377/single-phase-distribution-box-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">DISTRIBUTION BOXES   </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://5.imimg.com/data5/RB/FS/MY-4134543/pvc-coated-wire-volton-cables-penta-gold-wires-cables-500x500-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  CABLES      </h4>
+                </div>
+                
+                <div class="product">
+                    <img src="https://5.imimg.com/data5/BY/NS/TH/SELLER-4193037/electrical-terminal-connector-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  CONNECTORS      </h4>
+                </div>
+                
+                <div class="product">
+                    <img src="https://www.legrand.co.in/ecatalogue/images/products/medium/673043.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  SOCKETS      </h4>
+                </div>
+             </div>
+
+             <div id="nv9"class="sleekline"></div>
+
+             <div class="product_name">
+             <h2>SWITCHES /SIGNALS  </h2>
+            </div>
+
+            <div class="product_desc">
+                <p></p>
+            </div>
+
+            <div class="product_gallery">
+        
+                <div class="product">
+                    <img src="https://4.imimg.com/data4/PM/TJ/MY-1652546/control-panel-switch-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title"> CONTROL SWITCHES  </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://5.imimg.com/data5/EZ/FB/ML/SELLER-15436867/thumbwheel-switches-500x500.jpg" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  THUMBWHELL SWITCHES   </h4>
+                </div>
+
+                <div class="product">
+                    <img src="https://5.imimg.com/data5/UR/PX/XW/SELLER-3362980/schneider-tower-lights-500x500.png" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  TOWER LIGHTS     </h4>
+                </div>
+                
+                <div class="product">
+                    <img src="https://media.fortop.co.uk/public/files/products/auer-signal-led-beacons-serie-r-productfamilie.png" alt="" class="product__img">
+                    <div class="desc">       
+                    </div>
+                    <h4 class="product_title">  SIGNAL LIGHTS     </h4>
+                </div>
+                
+            </div>
+
+            <div class="sleekline"></div>
+            </div>
+            <!-- container class -->
+            <!-- footer -->
+
+            <section class="footer">
+                <div class="footer_one">
+                    <div class="q_contact">
+                        <h3>
+                            Quick Contacts
+                        </h3>
+                        <span>
+                            <i class="fa fa-building"></i>
+                            Moonex Technologies
+                        </span>
+                        <span>
+                            <i class="fa fa-user fa-lg"></i>
+                            Hari Om Yadav
+                        </span>
+                        <span id="span3">
+                            <i class="fa fa-map-marker fa-lg"></i>
+                            <p>Shop No, 800, Mohna Rd, near Lokdeep Public School
+                            Bohra Enclave East, Bhraman Wara, Sector 1
+                            Ballabhgarh, Faridabad, Haryana 121004 </p>
+                        </span>
+                        <span>
+                            <i class="fa fa-mobile fa-2x"></i>
+                            +91-9870115678
+                        </span>
+                        <div class="footerline"></div>
+                    </div>
+                    
+                    <div class="q_links">
+                        <h3>
+                            Quick Links
+                        </h3>
+                        <a href="../index.html">Home</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="contact.html#map">Site Map</a>
+                        <div class="footerline"></div>
+        
+                    </div>
+                    <div class="q_enquiry">
+                        <h3>
+                            Quick Enquiry
+                        </h3>
+                        <form name="google-sheet" method="post" id="form" class="form">
+                            <input id="name"type="text" name="Name" placeholder="Name" required>
+                            <input id="telephone" type="tel" name="Mobile" id="" placeholder="Phone" required size="10" minlength="10" maxlength="10">
+                            <input id="email"type="email" name="E-mail" placeholder="Email" required>
+                           
+                            <textarea name="Message" id="textarea" cols="30" rows="5" placeholder="Leave a message for us" required></textarea>
+                            <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="footer_two">
+                    <div class="footer_content">
+                        All Rights Reserved. Moonex Technologies (Terms of Use)<br>
+                        <!-- Developed & Managed By Weblink.In Pvt. Ltd. -->
+                    </div>
+                    <div class="footer_logo">
+                        <!-- <img src="https://catalog.wlimg.com/main-common/ei.png" alt=""> -->
+                        <img style="cursor:pointer;cursor:hand" src="https://seal.starfieldtech.com/images/3/en/siteseal_sf_3_h_l_m.gif"  alt="SSL site seal - click to verify">
+                    </div>
+                </div>
+            </section>
+<a href="" id="linktoProduct" style="display: none;"></a>
+
+<a href="enquiry.html" style="display: none;"id="linktoEnquiry"></a>
+        <!-- footer -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ank031100@gmail.com" id="gmail" style="display: none;"  target="_blank"></a>
+ 
+    </section>
+    <!-- <script src="../js/productHover.js"></script> -->
+    
+  <script src="../js/new.js"></script>
+
+
+    <script>
+
+
+var i=0;
+    function createEntry(td1,td2)
+    {
+    var table = document.getElementById("table");
+
+    // Create an empty <tr> element and add it to the 1st position of the table:
+    var row = table.insertRow(i);
+    i++;
+    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+
+    // Add some text to the new cells:
+    cell1.innerHTML = td1;
+    cell2.innerHTML = td2;
+
+    }
+
+    var acd=[];
+    for(let i=1;i<2;i++)
+    {
+    var str=localStorage.getItem(`acd${i}`);
+    acd[i]=JSON.parse(str);
+    }
+    console.log(acd);
+
+function popUpDetails(title)
+{
+   
+    console.log(title+"op");
+for(let i=1;i<2;i++)
+{   
+    if(acd[i].title===title)
+
+    {
+    Object.entries(acd[i]).map(item=>{
+            if(item[0]==="title")
+            {   
+                ;
+                  
+            }
+            
+            else
+            {
+                if(item[0]==="desc")
+                createEntry("",item[1]);
+                else
+                createEntry(item[0],item[1]);
+            }
+        console.log(item);
+        })
+    }
+    }
+
+}
+        var popup_open=0;
+        // links enquiry page
+            var bestPrice=document.getElementById("bestPrice");
+            var interested=document.getElementById("interested");
+            function enquiry()
+            {
+                
+                document.getElementById("product_title");
+
+                localStorage.setItem("titleSearch",document.getElementById("product_title").innerText);
+                localStorage.setItem("productPic",document.getElementById("pop_upImage").getAttribute('src'));
+                var linktoEnquiry=document.getElementById("linktoEnquiry");
+                linktoEnquiry.click();
+                
+            }
+            
+            bestPrice.addEventListener("click",enquiry);
+            interested.addEventListener("click",enquiry)
+        
+            // check click on pop up or not
+            document.addEventListener("click",checkPopup);
+            function checkPopup(e)
+            {
+            var popup=document.getElementById("pop_up");
+            var sh=window.getComputedStyle(popup).height;
+            sh=sh.replace("px","");
+            sh=parseInt(sh);
+            var sw=window.getComputedStyle(popup).width;
+            sw=sw.replace("px","");
+            sw=parseInt(sw);
+            var w=window.innerWidth;
+            var h=window.innerHeight;
+            var left=popup.style.left=(w-sw)/2;
+            var top=popup.style.top=(h-sh)/2;
+        
+                if(popup_open===1)
+                {   
+                    if(e.clientX>left && e.clientX<left+sw  && e.clientY>top && e.clientY <top + sh)
+                    ;
+                    else
+                    {
+                    popup.style.display="none";
+                    document.getElementsByTagName("body")[0].style.overflowY="scroll";
+            document.getElementById("body").style.filter="blur(0px)";
+                }
+                }
+            }
+        
+            
+        function func(id)
+        {   
+            popup_open=1;
+            id=parseInt(id);
+            var img=document.getElementsByClassName("product__img")[id-1];
+            console.log(img);
+            var title=document.getElementsByClassName("product_title")[id-1].innerHTML;
+            console.log(title);
+            var src=img.getAttribute("src");
+            console.log(src);
+            var popupImage=document.getElementById("pop_upImage");
+            var pop_upTitle=document.getElementById("product_title");
+            popupImage.setAttribute("src",`${src}`);
+            pop_upTitle.innerHTML=title;
+            console.log(pop_upTitle);
+            popUpDetails(title);
+
+            var popup=document.getElementById("pop_up");
+            var w=window.innerWidth;
+            document.getElementsByTagName("body")[0].style.overflowY="hidden";
+            document.getElementsByTagName("body")[0].style.width=w+"px";
+        
+            document.getElementById("body").style.filter="blur(2px)";    
+            var w=window.innerWidth;
+            var h=window.innerHeight;
+            var sw=window.getComputedStyle(popup).width;
+            sw=sw.replace("px","");
+            sw=parseInt(sw);
+            var sh=window.getComputedStyle(popup).height;
+            sh=sh.replace("px","");
+            sh=parseInt(sh);
+           
+            var left=popup.style.left=(w-sw)/2+"px";
+            var top=popup.style.top=window.pageYOffset+(h-sh)/2+"px";
+            popup.style.display="flex";
+        
+        }
+        
+        
+function whtsapWeb()
+{
+    window.location.href="https://api.whatsapp.com/send/?phone=919870115678&text&app_absent=0";
+}
+function gmail()
+{
+    document.getElementById("gmail").click();
+
+}
+function navDrop(id)
+        {   
+            var linkbutton=document.getElementById("linktoProduct").setAttribute("href",`#${id}`);
+            
+            document.getElementById("linktoProduct").click();
+        }
+        
+        var dropDown=document.getElementById("dropDown");
+        dropDown.addEventListener("scroll",()=>{
+            document.getElementsByTagName("body")[0].style.overflow=0;
+        })
+
+        window.addEventListener("resize",()=>{
+            var x=document.getElementById("mobile__on");
+        if(window.innerWidth>480)
+        {
+            x.style.display="none";
+        }
+        })
+
+        function navDrop(id)
+        {   
+            
+            if(window.getComputedStyle(document.getElementById("vDropOn")).display==="none")
+            {
+                id=id.substr(2);
+                console.log("n"+id);
+            var linkbutton=document.getElementById("linktoProduct").setAttribute("href",`products.html#n${id}`);
+
+            document.getElementById("linktoProduct").click();
+
+            }
+                        else{
+            var str=id;
+            console.log(str);
+            str=id.substr(2);
+            console.log(str);
+            id="nv"+str;
+            var linkbutton=document.getElementById("linktoProduct").setAttribute("href",`products.html#${id}`);
+            var y=document.getElementById("vDropOn");
+            var bars=document.getElementById("bars");
+            var wheel=document.getElementById("wheel");
+            y.style.display="none";
+            bars.style.display="flex";
+            wheel.style.display="none";
+            document.getElementById("linktoProduct").click();
+        }
+            
+        }
+        
+        function goToHome(){
+    var a = document.createElement("a");
+    a.href="../index.html";
+    a.click();
+} 
+   
+
+ </script>
+    <!-- <script src="../js/newimageHover.js"></script> -->
+    <script src="../js/mobileNav.js"></script>
+    <script src="../js/form.js"></script>
+
+
+</body>
+</html>
