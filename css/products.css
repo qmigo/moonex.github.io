@@ -17,7 +17,7 @@ overflow-x: hidden;
     display: none;
 }
 nav{
-    position: sticky;
+    /* position: sticky; */
     left: 0;
     top: 0;
     display: flex;
@@ -656,7 +656,7 @@ body{
         margin-bottom: 50px;
     }
     nav{
-        position: sticky;
+        /* position: sticky; */
         left: 0;
         top: 0;
         display: flex;
