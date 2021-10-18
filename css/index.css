@@ -235,10 +235,11 @@ nav{
 }
 /* primary section */
 .primary{
-    width:100vw;
+    width:98vw;
     height: 40vw;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    margin:auto;
     
 }
 #pic3{
